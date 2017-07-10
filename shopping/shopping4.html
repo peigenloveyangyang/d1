@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D1优尚网-提交订单</title>
+    <link href="http://www.jq22.com/jquery/bootstrap-3.3.4.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shopping2css">
+    <!-- 未登录状态 -->
+</head>
+<style>
+
+</style>
+<body>
+	<div class="S_head">
+		<div class="ht_login">
+            <span class="S_landing">
+                <a href="##" target="_blank">帮助中心</a></li>
+            </span>
+            <span class="S_ShowWelcome"> 您好，
+                <span>####</span>
+                欢迎来到D1购物（
+                <a href="##">退出登录</a>）
+            </span>
+        </div>
+        <div class="T_nav">
+        	<a href="##">
+        		<img src="http://images.d1.com.cn/BuyImages/logo.jpg" alt="">
+        	</a>
+        	<img src="http://images.d1.com.cn/BuyImages/cart.jpg" alt="">
+        	<img src="http://images.d1.com.cn/BuyImages/head_process_06.jpg" alt="">
+        </div>
+        </div>
+        <!-- 提交订单前需要填写的内容 -->
+        <div class="T_user">
+        	<p class="T_btn">请核对订单信息，并点击"提交订单"</p>
+        	<span class="T_a">收货人信息</span>
+            <span class="T_revise">修改收货人信息成功!</span>
+            <span class="T_line"></span>
+        	<div class="T_address">
+                <ul class="T_adds">  
+                    <li class="T_add">
+                        <input type="radio" name="sex" checked="checked">
+                        <span>杨传明</span>
+                        <span>九干路丽德创业园蓝欧科技</span>
+                        <a>修改</a>
+                        <a>删除</a>       
+                    </li>
+                </ul>   
+            </div>
+            <span class="T_newadd">[+新增收货人]</span>
+            <div style="overflow:hidden;display:none" class="T_div">
+                <ul class="T_users">
+                    <li>
+                        <span class="b2">*</span>&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:&nbsp;&nbsp;&nbsp;<input class="b1" type="text">
+                        <input type="radio" value="男" name="sex" checked="checked" style="margin-left:230px">&nbsp;&nbsp;先生&nbsp;&nbsp;
+                        <input type="radio" value="女" name="sex">&nbsp;&nbsp;女士
+                    </li>
+                    <li>
+                        <span style="float:left"><span class="b2">*</span>&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区:&nbsp;&nbsp;&nbsp;</span>
+                        <form class="form-inline" style="float:left">
+                          <div id="distpicker5">
+                            <div class="form-group">
+                              <label class="sr-only" for="province10">Province</label>
+                              <select class="form-control" id="province10"></select>
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="city10">City</label>
+                              <select class="form-control" id="city10"></select>
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="district10">District</label>
+                              <select class="form-control" id="district10"></select>
+                            </div>
+                          </div>
+                        </form>
+                    </li>
+                    <li>
+                        <span class="b2">*</span>&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址:&nbsp;&nbsp;&nbsp;<input class="b3" type="text">
+                    </li> 
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;邮政编码:&nbsp;&nbsp;&nbsp;<input class="b1" type="text">&nbsp;&nbsp;&nbsp;&nbsp;有助于快速确定收货地址
+                    </li> 
+                    <li>
+                        <span class="b2">*</span>&nbsp;&nbsp;手机号码:&nbsp;&nbsp;&nbsp;<input class="b1" type="text">
+                    </li>
+                    <li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;固定电话: &nbsp;&nbsp;<input class="b1" type="text">
+                    </li>
+                    <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;邮箱地址: &nbsp;&nbsp;<input class="b1" type="text">&nbsp;&nbsp;&nbsp;&nbsp;用来接收订单提醒邮件，便于您及时了解订单状态
+                    </li>   
+                </ul>
+                <input class="T_save" type="submit" value="保存收货人">
+                <p class="T_clear">清除重写</p>
+                <p class="T_cancel">取消</p>
+            </div>              
+            <p class="T_a" >支付方式</p>
+            <span class="T_line"></span>
+            <div class="T_payment">
+                <p class="T_b" style="margin-left: 90px">请选择支付方式</p>
+                <div class="T_payments">
+                    <input type="radio" name="a" checked="checked">
+                    <span>网上支付</span>
+                    <span>即时到帐，支持绝大数银行借记卡及部分银行信用卡，使用网上支付购物满<strong style="color:red">100</strong>元享受免邮费优惠。</span>
+                </div>
+                <ul class="T_paymentOne">
+                        <p>支持以下支付平台</p>
+                        <li>
+                            <input type="radio" name="b" checked="checked">
+                            <img src="http://images.d1.com.cn/PayImages/spayid_60.png" alt="">
+                        </li>
+                        <li>
+                             <input type="radio" name="b">
+                             <img src="http://images.d1.com.cn/PayImages/spayid_20.png" alt="">
+                        </li>
+                        <li>
+                            <input type="radio" name="b">
+                            <img src="http://images.d1.com.cn/PayImages/spayid_25.png" alt="">
+                        </li>
+                        <li>
+                            <input type="radio" name="b">
+                            <img src="http://images.d1.com.cn/PayImages/spayid_161.png" alt="">
+                        </li>
+                        <br>
+                        <span>网银支付</span>&nbsp;&nbsp;&nbsp;&nbsp;需开通网银：<br>
+                        <span>快捷支付</span>&nbsp;&nbsp;&nbsp;&nbsp;一步验证，无需网银：  
+                </ul>
+                <div class="T_paymentTwo">
+                    <input type="radio" name="a">
+                    <span>货到付款</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品正确再支付货款，如有问题请当面拒收，立即联系客服。
+                    <a href="##" target="_blank">快速查看货到付款地区</a>
+                    <p><input type="radio" checked="checked">现金支付</p>
+                </div>
+                <div class="T_paymentThree">
+                    <input type="radio" name="a">
+                    <span>银行电汇</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转帐后1-3个工作日内到帐
+                    <a href="##" target="_blank">查看账户信息</a>
+                </div>
+            </div>
+            <p class="T_a">送货时间</p>
+             <span class="T_line"></span>
+            <div class="T_delivery">
+                <ul>
+                    <li>
+                        <input type="radio" name="c">
+                        <span>送货时间不限(周一至周日均可送达)</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="c">
+                        <span>周六日及节假日送货(工作日不送货)</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="c">
+                        <span>周一至周五工作日送货(写字楼/商用地址客户请选择此项)</span>
+                    </li>
+                    <li>
+                        <p>所有商品将通过快递方式发出。</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            <p class="T_a">商品清单</p>
+            <span class="T_line"></span>
+            <p class="T_alter"><a href="##" >返回购物车修改</a></p>
+            
+            <table class="T_table">
+                <tr class="T_th">
+                    <th style="width:60px">商品编号</th>
+                    <th style="width:440px">商品名称</th>
+                    <th style="width:80px">会员价</th>
+                    <th style="width:50px">数量</th>
+                    <th style="width:50px">小计</th>
+                    <th style="width:50px">积分</th>
+                </tr>
+                <tr class="T_td">
+                    <td>01904370</td>
+                    <td>leapower智能摄像眼镜1080P 高清行车记录仪</td>
+                    <td>499</td>
+                    <td>2</td>
+                    <td>998</td>
+                    <td>998</td>
+                </tr>
+            </table>
+            <p class="T_a">结算信息</p>
+            <span class="T_line"></span>
+            <p class="T_b" style="margin-left:70px;">+使用D1优尚优惠券</p>
+                <ul class="T_coupons" >
+                    <li>输入优惠券号码：</li>
+                    <li><input type="text"></li>
+                    <li><input type="image" src='http://images.d1.com.cn/BuyImages/activejuan.jpg'></li>
+                    <li>
+                        <p>注：部分优惠券由于不满足条件不能使用！</p>
+                        <a href="##">查看我的所有优惠券</a>  
+                    </li>
+                </ul>
+            <div class="T_settlement">
+                <p>商品金额：</p> <span>998元</span></li>
+                <p>-优惠券：</p><span>0元</span></li>
+                <p>-满减金额：</p><span>0元</span></li>
+                <p>-预存款：</p><span>0元</span><span>+运费：</span><a href="##">运费标准</a></li>
+                <p>应付总额：</p><span>998元</span></li>
+            </div>
+            <p class="T_a">订单留言</p>
+            <span class="T_line"></span>
+            <p class="T_remind">网购温馨提示，电话诈骗猖獗，接到任何购物网站通知中奖或低价促销电话，均为诈骗信息，D1优尚也从不通过电话进行促销，请提高警惕</p>
+            <p class="T_message">您对送货时间、商品或其他方面有特殊要求，请在这里留言：</p>
+            <input type="text" class="T_text">
+            <br>
+            <input type="image" src="http://images.d1.com.cn/BuyImages/SubmitOrder.jpg" class="T_btn2">
+        </div>      
+</body>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/distpicker.data.js"></script>
+    <script src="../js/distpicker.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        $('.T_add a:last-child').click(function () {
+            $(this).parent().remove();
+        })
+        $('.T_add a:first-of-type').click(function () {
+            $('.T_div').show()
+        })
+        //  新增
+        $('.T_newadd').click(function () {
+            $('.T_div').show()
+        });
+        //  取消
+        $('.T_cancel').click(function () {
+            $('.T_div').hide()
+        });
+        $('.T_b').click(function () {
+            $('.T_coupons').slideToggle('slow');
+        });
+
+        //  支付方式
+        $('.T_payments>input').click(function () {
+            $('.T_paymentOne').show()
+            $('.T_paymentTwo>p').hide()
+        });
+        $('.T_paymentTwo>p').css('display', 'none')
+        $('.T_paymentTwo>input').click(function () {
+            $('.T_paymentTwo>p').show();
+            $('.T_paymentOne').hide()
+        })
+        $('.T_paymentThree>input').click(function () {
+            $('.T_paymentOne').hide();
+            $('.T_paymentTwo>p').hide()
+        });
+
+        //  生成商品清单
+        var shopList = (`<tr class="T_td">
+                    <td>01904370</td>
+                    <td>leapower智能摄像眼镜1080P 高清行车记录仪</td>
+                    <td>499</td>
+                    <td>2</td>
+                    <td>998</td>
+                    <td>998</td>
+                </tr>`);
+        $(".T_th").after(shopList);
+    </script>
+    </script>
+</html>

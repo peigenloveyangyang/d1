@@ -1,0 +1,84 @@
+#content-left{
+    width:220px ;
+    height: 904px;
+    border: 1px solid black;
+    float:left;
+    margin-top:10px ;
+
+}
+#content-left-top{
+    background-image: url(http://images.d1.com.cn/images2012/New/help/1.gif);
+    width:219px;
+    height: 34px;
+}
+#content-left ul li{
+    width:159px;
+   margin-left: 60px;
+}
+#content-left ul li a{
+    color: #666666;
+    font-weight: 100;
+    font-size: 14px;
+
+}
+
+#content-left a:hover{
+    color:#c14d62 ;
+}
+#content-left h1 {
+
+    height:28px;
+}
+#content-left h1 a{
+    font-size: 16px;
+    font-weight:700;
+    margin-top: 12px;
+    margin-left: 28px;
+    color: darkblue;
+}
+#content-left h1 a:hover{
+    color: #E10100;
+}
+#content-left-first{
+    width:219px;
+    height:134px;
+    border-bottom: 1px dashed black;
+}
+#content-left-second{
+    width:219px;
+    height:114px;
+    border-bottom: 1px dashed black;
+    margin-top: 15px;
+}
+#content-left-third{
+    width:219px;
+    height:94px;
+    border-bottom: 1px dashed black;
+    margin-top: 15px;
+}
+#content-left-fourth{
+    width:219px;
+    height:94px;
+    border-bottom: 1px dashed black;
+    margin-top: 15px;
+}
+#content-left-fifth{
+    width:219px;
+    height:134px;
+    border-bottom: 1px dashed black;
+    margin-top: 15px;
+}
+#content-left-sixth{
+    width:219px;
+    height:114px;
+    border-bottom: 1px dashed black;
+    margin-top: 15px;
+}
+#content-left-seventh{
+    width:219px;
+    height:74px;
+    border-bottom: 1px dashed black;
+    margin-top: 15px;
+}
+
+

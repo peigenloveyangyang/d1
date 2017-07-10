@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--css引入-->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/lunbotu.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-example" id="l-top">
+<!--头部开始-->
+<div id="head">
+    <div id="head-wrap">
+        <!--h-top-->
+        <div id="h-top">
+            <div id="h-top-in">
+                <div id="h-top-l">
+                    <!--<p>你好，欢迎来到D1购物，请<a style="color:#8cc341;padding: 0 5px" href="login.html">登录</a>或<a style="color:#8cc341;padding: 0 5px" href="zhuce.html">注册</a></p>-->
+                </div>
+                <div id="h-top-r">
+                    <ul>
+                        <li class="myAccountBtn">
+                            <a href="#">我的账户</a>
+                            <div id="myAccount">
+                                <ul>
+                                    <li>
+                                        <a href="#">我的订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的优惠劵</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的积分</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的晒单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的评论</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">订单查询</a></li>
+                        <li><a href="#">积分换购</a></li>
+                        <li><a href="help.html">帮助中心</a></li>
+                        <li style="float: right"><a href="#">在线客服</a></li>
+                        <li class="telD1Btn" style="float: right">
+                            <a href="#">手机优尚</a>
+                            <div id="telD1">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangchuangyishenghuo.jpg" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚创意生活</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>创意生活&nbsp;尽在掌握</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangmeizhuang.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚美妆</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>每周一次美妆特卖</p>
+                                        </div>
+                                    </li>
+                                    <li style="border-bottom: none">
+                                        <div>
+                                            <img src="img/head/app-tongyangerweima.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>下载APP</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>一元领取APP礼物</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--h-mid-->
+        <div id="h-mid">
+            <div class="h-mid-wrap">
+                <div>
+                    <img src="img/head/logo.png" alt="">
+                </div>
+                <div class="search">
+                    <div>
+                        <form class="bs-example bs-example-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input-group">
+                                        <input id="searchTxt" type="text" placeholder="请输入您要搜索的商品名称或编码" class="form-control searchInput">
+                                        <a id="searchBot" class="input-group-btn">
+                                            <button class="btn btn-default searchBtn" type="button">搜索</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hotSearch">
+                        <span>热门搜索：</span>
+                        <ul>
+                            <li><a href="search/summer.html">冰爽夏日</a></li>
+                            <li><a href="cosmetics.html?productsort=5&">灭蚊</a></li>
+                            <li><a href="cosmetics.html?productsort=6&">清仓</a></li>
+                            <li><a href="cosmetics.html?productsort=7&">雨季</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhengping">
+                    <img src="http://images.d1.com.cn/Index/2015/help.jpg" alt="">
+                </div>
+                <div id="buyCar">
+                        <div>
+                            <img style="height: 33px" src="img/head/gouwu.png" alt="">
+                        </div>
+                        <div>
+                            <p>购物车 <span>0</span> 件</p>
+                        </div>
+                        <div class="xiala"></div>
+                        <div id="card">
+                            <p>您的购物车中暂无商品!</p>
+                            <div id="jiesuan">
+                                <div>
+                                    <p>购物车中有<span>0</span>&nbsp;金额总计:<span>￥00.00</span>件商品</p>
+                                </div>
+                                <div id="jiesuanBtn">
+                                    <a id="pay">立即结算&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--h-bot-->
+        <div id="h-bot">
+            <div class="h-bot-in">
+                <ul>
+                    <li id="allgoods">
+                        <a href="#">全部商品</a>
+                        <div id="allgoodsBtn"></div>
+                        <div id="goodsInfo">
+                            <div class="goodsInfo-l">
+                                <ul>
+                                    <li>
+                                        <h3>护肤水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>彩妆香水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>个性配饰</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>创意家居</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>数码宝贝</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>时尚热点</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="goodsInfo-r">
+                                <div class="goodsInfo-r-div">
+                                    <h3>热卖品牌</h3>
+                                    <div class="goodsInfo-one">
+                                        <a href="#">洁面</a>
+                                        <a href="#">爽肤水</a>
+                                        <a href="#">精华</a>
+                                        <a href="#">乳液/面霜</a>
+                                        <a href="#">眼霜</a>
+                                        <a href="#">防晒隔离</a>
+                                        <a href="#">唇部护理</a>
+                                        <a href="#">面膜/面贴</a>
+                                        <a href="#">黑头角质</a>
+                                        <a href="#">护肤套装</a>
+                                        <a href="#">卸妆</a>
+                                        <a href="#">身体乳</a>
+                                        <a href="#">美体塑造</a>
+                                        <a href="#">脱毛</a>
+                                        <a href="#">护手霜</a>
+                                        <a href="#">男士护肤</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="cosmetics.html?productsort=1&">化妆品</a></li>
+                    <li><a href="cosmetics.html?productsort=2&">创意家居</a></li>
+                    <li><a href="cosmetics.html?productsort=3&">创意数码</a></li>
+                    <li><a href="cosmetics.html?productsort=4&">时尚装备</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+
+<!--轮播图开始-->
+<div id="lunbotu">
+    <div id="l-box">
+        <a id="l-leftBtn" href="#">
+            <img src="http://images.d1.com.cn/images2012/index2012/13january/white-left.png" alt="">
+        </a>
+        <a id="l-rightBtn" href="#">
+            <img src="http://images.d1.com.cn/images2012/index2012/13january/white-right.png" alt="">
+        </a>
+        <ol id="l-btn">
+            <li class="l-actBtn">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+        <div id="l-content">
+            <ul id="l-banner">
+                <li><img src="http://images.d1.com.cn/shopadmin/splimg/201706/pc01207356.jpg" alt=""></li>
+                <li><img src="http://images.d1.com.cn/shopadmin/splimg/201706/pc01207309.jpg" alt=""></li>
+                <li><img src="http://images.d1.com.cn/shopadmin/splimg/201705/pc01207352519.jpg" alt=""></li>
+                <li><img src="http://images.d1.com.cn/shopadmin/splimg/201705/big170505banner.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--轮播图结束-->
+
+<!--内容顶部-->
+<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+            <ul class="nav navbar-nav">
+                <li><a href="#l-top">返回顶部</a></li>
+                <li><a href="#l-zhuti">创意主题</a></li>
+                <li><a href="#l-sheji">原创设计</a></li>
+                <li><a href="#l-jiaju">创意家居</a></li>
+                <li><a href="#l-baobei">数码宝贝</a></li>
+                <li><a href="#l-baokuan">美妆爆款</a></li>
+                <li><a href="#l-peishi">个性配饰</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--内容开始-->
+<div id="content-warp">
+    <div id="content">
+        <!--内容主体-->
+        <!--<div>-->
+            <div id="l-zhuti">
+                <img src="http://images.d1.com.cn/images2016/home-banner-zt-h.jpg" alt="">
+            </div>
+            <div id="l-zhuti-cont" class="row">
+                <ul>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201705/yusan-mj-0519.jpg" alt="">
+                                </div>
+                                <h5>与众不同的雨伞</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201705/555-240001904382.jpg" alt="">
+                                </div>
+                                <h5>抽上这支烟，才真的"爽"</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201705/yanjing_mj_0516.jpg" alt="">
+                                </div>
+                                <h5>智能拍摄眼镜</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201705/maojin5551.jpg" alt="">
+                                </div>
+                                <h5>夏日运动清凉神器</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201705/555-24001904379.jpg" alt="">
+                                </div>
+                                <h5>任性变大变小的防水收纳袋</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201706/shanguang_mj_0605.jpg" alt="">
+                                </div>
+                                <h5>你黑乎乎的照片有救了</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201705/yanzhao-mj-0519.jpg" alt="">
+                                </div>
+                                <h5>睡个好觉一点也不难</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-6">
+                        <a href="#">
+                            <div class="l-zhuti-cont-div">
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/splimg/201705/chongdian_mj_0515.jpg" alt="">
+                                </div>
+                                <h5>数码配件大集合</h5>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="l-sheji">
+                <img src="http://images.d1.com.cn/images2016/home-banner-yc-h1.jpg" alt="">
+            </div>
+            <div class="l-sheji-cont row" >
+                <ul>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/06/0120725820170306162305_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">安劲宝护颈手机支架</p>
+                                        <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/01/0190436620170406191512_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">防走光开盖铝镁合金行李箱</p>
+                                        <p class="l-price-p2">会员价:<span>￥1199</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/12/0120730320170417181742_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">VACE智能美颜仪</p>
+                                        <p class="l-price-p2">会员价:<span>￥1480</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/01/0810027520170407103307_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">重复书写云端备份笔记本</p>
+                                        <p class="l-price-p2">会员价:<span>￥89</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/05/0120729920170406185808_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">家用破壁技术料理机</p>
+                                        <p class="l-price-p2">会员价:<span>￥1299</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/10/0190436720170413163858_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">活跃E5滑盖电弧打火机</p>
+                                        <p class="l-price-p2">会员价:<span>￥96</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/10/0120727620170313193945_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">速啪快速洗鞋喷雾套装</p>
+                                        <p class="l-price-p2">会员价:<span>￥139</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/16/0120728020170317170352_1_400.gif" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">快速化冰双面解冻板</p>
+                                        <p class="l-price-p2">会员价:<span>￥159</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/07/0120726020170307124034_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">花草检测智能养花神器</p>
+                                        <p class="l-price-p2">会员价:<span>￥289</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/06/0810023020170306165206_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">超薄九宫格智能键盘</p>
+                                        <p class="l-price-p2">会员价:<span>￥129</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/01/0810022820170302174124_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">全透明屏幕智能健康手环</p>
+                                        <p class="l-price-p2">会员价:<span>￥269</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4">
+                        <a href="#">
+                            <div class="l-sheji-cont-div">
+                                <div>
+                                    <div class="l-shadow"></div>
+                                    <div>
+                                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/16/0120719720170224140452_1_400.jpg" alt="">
+                                    </div>
+                                    <div class="l-price">
+                                        <p class="l-price-p1">强吸水生态感应智能毛巾</p>
+                                        <p class="l-price-p2">会员价:<span>￥139</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="l-jiaju">
+                <img src="http://images.d1.com.cn/images2016/home-banner-jj-h.jpg" alt="">
+            </div>
+            <div class="l-sheji-cont row">
+            <ul>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/21/0120729020170321155506_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">麦开智能净水壶tita</p>
+                                    <p class="l-price-p2">会员价:<span>￥389</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/27/0120729420170327153631_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">磁性鞋扣懒人鞋带扣</p>
+                                    <p class="l-price-p2">会员价:<span>￥139</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/28/0120729520170329104539_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">美国众筹爆品电动指甲刀</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/01/0120729820170401121838_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">高显色无频闪护眼台灯</p>
+                                    <p class="l-price-p2">会员价:<span>￥399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/10/0120730120170413174753_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">小禾家用吸入式灭蚊灯</p>
+                                    <p class="l-price-p2">会员价:<span>￥168</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/06/0810027820170411172546_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">博皓医用级声波牙刷</p>
+                                    <p class="l-price-p2">会员价:<span>￥499</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/10/0810028320170411164901_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">智能遥控插电小夜灯</p>
+                                    <p class="l-price-p2">会员价:<span>￥299</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/10/0120727520170313170943_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">杀菌消毒去味智能冰箱宝</p>
+                                    <p class="l-price-p2">会员价:<span>￥199</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/16/0120727920170320113012_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">智能富氢电解水水素水杯</p>
+                                    <p class="l-price-p2">会员价:<span>￥498</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/08/0120726320170308180203_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">立体3D早教地球仪</p>
+                                    <p class="l-price-p2">会员价:<span>￥238</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/16/0120728420170323133722_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">超声波去农残杀菌清洗器</p>
+                                    <p class="l-price-p2">会员价:<span>￥378</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/02/0120725420170306153438_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">一滴瞬间消臭露</p>
+                                    <p class="l-price-p2">会员价:<span>￥65</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+            <div id="l-baobei">
+                <img src="http://images.d1.com.cn/images2016/home-banner-sm-h.jpg" alt="">
+            </div>
+            <div class="l-sheji-cont row">
+            <ul>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/29/0810027420170427163045_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">通用可换线降噪运动耳机</p>
+                                    <p class="l-price-p2">会员价:<span>￥159</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/05/0810027620170411174041_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">金属磁吸式运动蓝牙耳机</p>
+                                    <p class="l-price-p2">会员价:<span>￥158</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/06/0810028020170406165410_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">影立方二代微型摄像机</p>
+                                    <p class="l-price-p2">会员价:<span>￥258</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/13/0810024120170330112107_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">手机平板百变支架小音箱</p>
+                                    <p class="l-price-p2">会员价:<span>￥379</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/13/0810023920170313111340_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">平板电脑支架蓝牙音箱</p>
+                                    <p class="l-price-p2">会员价:<span>￥479</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/13/0810023820170313173140_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">蓝牙无线头戴式降噪耳机</p>
+                                    <p class="l-price-p2">会员价:<span>￥479</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/06/0810023120170306174500_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">连续心率智能监测手环</p>
+                                    <p class="l-price-p2">会员价:<span>￥289</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/13/0810018120170220165717_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">充电器和蓝牙音箱二合一</p>
+                                    <p class="l-price-p2">会员价:<span>￥268</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/16/0810019720170413134959_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">分离入耳式蓝牙耳机</p>
+                                    <p class="l-price-p2">会员价:<span>￥688</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/09/0810017920170413135105_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">苹果双卡双待设备</p>
+                                    <p class="l-price-p2">会员价:<span>￥359</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/09/0810017820170215173736_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">Halos电脑加速宝16G</p>
+                                    <p class="l-price-p2">会员价:<span>￥89</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+            <div id="l-baokuan">
+                <img src="http://images.d1.com.cn/images2016/home-banner-jj-mz-h.jpg" alt="">
+            </div>
+            <div class="l-sheji-cont row">
+            <ul>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/09/18/0142696920160918171638_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">珂润润浸保湿滋养乳霜</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/08/24/01426720_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">悦诗风吟绿茶水分菁露</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2014/09/29/01424500_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">欧莱雅火山岩洁面膏</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/06/20/0142695220160830110614_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">金稻蒸脸器充电手持补水仪</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2010/12/10/01413015_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">玉兰油多效修护醒肤水</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images.d1.com.cn/shopadmin/d1gdsimg/2012/09/014/01415807_400_3.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">多芬蚕丝身体滋润乳霜</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/08/24/0142671920160214130108_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">花王蒸汽眼罩</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+            <div id="l-peishi">
+                <img src="http://images.d1.com.cn/images2016/home-banner-ps-h1.jpg" alt="">
+            </div>
+            <div class="l-sheji-cont row">
+            <ul>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/22/0190436120170322112126_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">一款保护视力的神奇眼罩</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/28/0810026320170413094641_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">情侣尼龙表带智能手表</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/27/0190436420170327183118_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">三重实力防盗带充电背包</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/04/12/0190436820170412115545_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">水下救生防溺水手环</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/09/0810023420170309143007_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">可爱卡通化妆镜移动电源</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/07/0120726120170307130141_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">口香糖大小的钥匙收纳器</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/13/0120718720170213143603_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">可伸缩时尚保水杯</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/01/20/0810016320170207175756_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">苹果6/6p手机壳自拍器</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/09/0190434120170215165659_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">黑色3D午夜魔幻眼罩</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/12/07/0190430720161207192427_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">一体成型自定义收纳背包</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/10/26/0190428820161026183125_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">户外多功能折叠旅行旅游包</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4">
+                    <a href="#">
+                        <div class="l-sheji-cont-div">
+                            <div>
+                                <div class="l-shadow"></div>
+                                <div>
+                                    <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/10/26/0190428420170228151144_1_400.jpg" alt="">
+                                </div>
+                                <div class="l-price">
+                                    <p class="l-price-p1">美国可折叠收纳旅行包24L</p>
+                                    <p class="l-price-p2">会员价:<span>￥198</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--</div>-->
+    </div>
+</div>
+<!--内容结束-->
+
+<!--底部开始-->
+<div id="foot">
+    <div id="foot-wrap">
+        <div id="foot-t">
+            <img src="img/foot/biaoyu.png" alt="">
+        </div>
+        <div id="foot-m">
+            <ul>
+                <li>
+                    <span>购物帮助</span>
+                    <a href="help-newhand2.html">购物的基本问题</a>
+                    <a href="help-newhand4.html">如何使用优惠劵</a>
+                    <a href="help-newhand3.html">如何累计并消费积分</a>
+                    <a href="help-newhand1.html">第一次购物体验</a>
+                </li>
+                <li>
+                    <span>支付方式</span>
+                    <a href="help-pay1.html">货到付款</a>
+                    <a href="help-pay2.html">银行电汇</a>
+                    <a href="help-pay3.html">网银支付</a>
+                    <a href="help-pay4.html">邮局汇款</a>
+                </li>
+                <li>
+                    <span>配送方式级费用</span>
+                    <a style="color: red" href="help-self-service2.html">物流信息查询</a>
+                    <a href="help-dispatching1.html">配送范围</a>
+                    <a href="help-dispatching2.html">配送方式</a>
+                    <a href="help-dispatching3.html">运费说明</a>
+                </li>
+                <li>
+                    <span>售后服务</span>
+                    <a href="help-customer-service.html">D1品质保证原则</a>
+                    <a href="help-customer-service.html">D1退换货总原则</a>
+                    <a href="help-customer-service.html">D1退换货地址及流程</a>
+                    <a href="help-customer-service.html">D1退换货特殊说明</a>
+                </li>
+                <li>
+                    <span>VIP特享政策</span>
+                    <a href="help-vip2.html">VIP会员的优惠及服务</a>
+                    <a href="help-vip2.html">如何获得和保持VIP</a>
+                    <a href="help-vip3.html">如何升级为白金VIP</a>
+                    <a href="help-vip3.html">白金VIP的优惠及服务</a>
+                </li>
+            </ul>
+            <img class="foot-m-r" src="img/foot/erweima.png" alt="">
+        </div>
+        <div id="foot-b">
+            <div class="foot-b-t">
+                <a href="help-self-service3.html">联系我们</a>
+                <a href="help-investment2.html">关于我们</a>
+                <a href="help-dispatching1.html">配送范围</a>
+                <a href="help-pay.html">如何付款</a>
+                <a href="help-investment1.html">品牌合作</a>
+                <a href="help-friend.html">友情链接</a>
+                <a style="border: none" href="http://www.kubolo.com/">全球创意购</a>
+            </div>
+        </div>
+        <div id="foot-mid">
+            <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202003031700010" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/wei_349.gif" width="45" height="50" border="0"></a>
+            <a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20130321002326002808" target="_blank"><img src="http://images.d1.com.cn/images2013/index/cx.png?l=CX20130321002326002808"></a>
+            <a href="http://images.d1.com.cn/images2010/2010ec100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/ceca.gif" width="117" height="42" border="0"></a>
+            <a href="http://images.d1.com.cn/images2010/dzxh91602_mwang.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/beca.gif" width="79" height="42"></a>
+            <a href="http://images.d1.com.cn/images2012/foot/2007_top100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/top100_logo.gif" border="0"></a>
+            <a href="http://www.ectrustprc.org.cn/seal/splash/1000016.htm" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/redlogo.gif" border="0"></a>
+        </div>
+        <div id="foot-bot">
+            京ICP证030072号&nbsp;&nbsp;京公网安备：110108905029 &nbsp;&nbsp;www.D1.com.cn Copyright 2002-2016 D1优尚网 版权所有
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+<!--js引入-->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/lunbotu.js"></script>
+<script src="js/cookie.js"></script>
+<script>
+    $('body').scrollspy({ target: '#navbar-example' });
+    window.onscroll=function(){
+        //兼容写法
+        var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        if (scrollTop>683) {
+            $("#navbar-example").addClass("move-to-top")
+        }else{
+            $("#navbar-example").removeClass("move-to-top")
+        }
+
+    }
+
+    $("#searchBot").click(function () {
+        var searchTXT=$("#searchTxt").val();
+        console.log(searchTXT);
+        $("#searchBot").attr("href","cosmetics.html?value="+searchTXT);
+
+//        $.ajax({
+//            type: "get",
+//            url: "http://10.80.11.213:8080/search",
+//            data:{
+//                productName:searchTXT
+//            },
+//            dataType: "jsonp",
+//            jsonp:"cb",
+//            success: function (data) {
+//                console.log(data);
+//            }
+//        })
+    })
+
+
+    var name=getCookie("name");
+    var states=getCookie("states");
+    if(states=="true"){
+//        alert("有name")
+        var newP = document.createElement("p");
+        newP.innerHTML=(`
+            ${name},你好!欢迎来到D1购物
+        `),
+        $("#h-top-l").append(newP);
+
+        $("#pay").click(function () {
+            window.location.href="shopping/shopping2.html"
+        })
+
+
+
+    }else{
+        var newP2 = document.createElement("p");
+        newP2.innerHTML=(`
+            <p>你好，欢迎来到D1购物，请<a style="color:#8cc341;padding: 0 5px" href="login.html">登录</a>或<a style="color:#8cc341;padding: 0 5px" href="zhuce.html">注册</a></p>
+        `),
+        $("#h-top-l").append(newP2);
+
+        $("#pay").click(function () {
+            window.location.href="shopping/shopping.html"
+        })
+
+
+
+    }
+
+//    $("#h-top-l").html()
+
+
+
+
+</script>
+</body>
+</html>

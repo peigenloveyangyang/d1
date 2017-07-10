@@ -1,0 +1,354 @@
+#head{
+    width: 100%;
+    height: 179px;
+    background-color: #fff;
+    position: relative;
+    top:0;
+}
+#head a{
+    color: #79797b;
+}
+#head a:hover{
+    color: #8c000e;
+    text-decoration:none
+}
+#head-wrap{
+    margin: 0 auto;
+}
+/*h-top*/
+#h-top{
+    width: 100%;
+    height:30px;
+    background-color: #f7f7f7;
+    line-height: 30px;
+    color: #989898;
+}
+#h-top-in{
+    width: 1200px;
+    margin: 0 auto;
+    height:30px;
+    background-color: #f7f7f7;
+    line-height: 30px;
+    color: #989898;
+}
+#h-top-l{
+    height: 30px;
+    width:440px;
+    float: left;
+}
+#h-top-r{
+    width:520px;
+    height: 30px;
+    float: right;
+}
+/*我的账户*/
+#h-top-r>ul>li{
+    float: left;
+    height: 30px;
+    padding: 0 15px;
+}
+#myAccount{
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #989898;
+    width: 80px;
+    background-color:#f7f7f7;
+    display: none;
+}
+#myAccount>ul>li{
+    height: 25px;
+    line-height: 25px;
+}
+#h-top-r .myAccountBtn:hover #myAccount{
+    display:block;
+}
+/*手机优尚*/
+#telD1{
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #989898;
+    width: 200px;
+    background-color:#f7f7f7;
+    display: none;
+}
+.telD1Btn:hover #telD1{
+    display: block;
+}
+#telD1 ul li{
+    height: 95px;
+    border-bottom: 1px solid #989898;
+}
+#telD1 img{
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
+#telD1 li div{
+    float: left;
+}
+.telD1-r{
+    width: 100px;
+    margin-top: 10px;
+}
+#telD1 span{
+    font-size: 12px;
+    color: #120d1e;
+    line-height: 15px;
+}
+#telD1 p{
+    font-size: 12px;
+    color: #f14854;
+    line-height: 15px;
+}
+/*搜索框*/
+#h-mid{
+    width: 1200px;
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+.h-mid-wrap{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.h-mid-wrap div{
+    float: left;
+}
+.search{
+    width: 400px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+#h-mid .searchInput{
+    border: 2px solid #f14854;
+    border-radius: 0;
+    width: 324px;
+}
+#h-mid .searchBtn{
+    background-color: #f14854;
+    border-radius: 0;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    width: 76px;
+    border: none;
+}
+.hotSearch{
+    width: 400px;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.hotSearch span{
+    float: left;
+    margin-right: 10px;
+}
+.hotSearch ul{
+    float: left;
+}
+.hotSearch ul li{
+    float: left;
+    border-left: 1px solid #79797b;
+    padding: 0 15px;
+}
+#buyCar{
+    width: 150px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    /*overflow: hidden;*/
+    line-height: 35px;
+    font-size: 14px;
+    margin-left: 90px;
+    position: relative;
+}
+#buyCar div{
+    float: left;
+    margin-right: 4px;
+}
+#buyCar div span{
+    color: #f14854;
+}
+#buyCar .xiala{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 0;
+    border-top: 5px solid #f14854;
+    margin-top: 15px;
+    float: right;
+}
+#buyCar #card{
+    font-size: 12px;
+    color: #5c5c5c;
+    z-index: 2001;
+    position: absolute;
+    border: #f0424e 2px solid;
+    background: #fff;
+    width: 407px;
+    display: none;
+    top: 35px;
+    right: 0;
+    margin-right: 0;
+    margin-top: -2px;
+}
+#card p{
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding-left: 10px;
+}
+#jiesuan{
+    width: 100%;
+    border-top: 1px dotted #79797b;
+    height: 48px;
+    background-color: #f7f7f7;
+}
+#jiesuan div{
+    float: left;
+}
+#jiesuanBtn{
+    width: 94px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #f0424e;
+    margin-top: 5px;
+    margin-left: 70px;
+    text-align: center;
+    line-height: 24px;
+}
+#jiesuanBtn a{
+    color: white;
+    font-size: 16px;
+}
+#buyCar:hover #card{
+    display: block;
+}
+/*h-bot*/
+#h-bot{
+    width: 100%;
+    height: 44px;
+    background-color: #f14854;
+}
+.h-bot-in{
+    width: 1200px;
+    height: 44px;
+    background-color: #f14854;
+    margin: auto;
+    border: none;
+    /*float: left;*/
+}
+#h-bot li{
+    float: left;
+    text-align: center;
+}
+#h-bot li>a{
+    padding: 0 25px;
+    line-height: 44px;
+    font-size: 16px;
+    color: white;
+}
+#h-bot .h-bot-in>ul>li:hover{
+    background:#a40000;
+}
+#h-bot .h-bot-in>ul>li:hover>a{
+    color: white;
+}
+#allgoods{
+    width: 210px;
+    background-color: #da2f3b;
+    color: white;
+}
+#allgoodsBtn{
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 0;
+    border-top: 6px solid white;
+    margin-top: 20px;
+    float: right;
+    margin-right: 10px;
+}
+/*全部商品信息*/
+#goodsInfo{
+    position: absolute;
+    width: 984px;
+    height: 312px;
+    background-color: #f7f7f7;
+    display: none;
+    z-index: 10000;
+}
+.goodsInfo-l{
+    width: 732px;
+    height: 306px;
+    float: left;
+}
+.goodsInfo-l ul li{
+    float: left;
+    width: 240px;
+    height: 153px;
+    padding-left: 15px;
+}
+.goodsInfo-l ul li h3{
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    text-align: left;
+    color:#989898;
+}
+.goodsInfo-l ul li a{
+    color:#989898;
+    line-height: 27px;
+    padding: 0 4px;
+    white-space: nowrap;
+}
+#goodsInfo .goodsInfo-one{
+    text-align: left;
+    border-top: 1px solid #989898;
+}
+.goodsInfo-r{
+    width: 243px;
+    border-left: 1px solid #ccc;
+    float: right;
+    background: #f9f9f9;
+    height: 310px;
+}
+.goodsInfo-r h3{
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    text-align: left;
+    color:#989898;
+}
+.goodsInfo-r a{
+    color:#989898;
+    line-height: 27px;
+    padding: 0 4px;
+    white-space: nowrap;
+}
+.goodsInfo-r-div{
+    width: 230px;
+    margin: 0 auto;
+}
+#allgoods:hover #goodsInfo{
+    display: block;
+}
+#allgoods:hover #allgoodsBtn{
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 0;
+    border-bottom: 6px solid white;
+    margin-top: 20px;
+    float: right;
+    margin-right: 10px;
+}
+
+

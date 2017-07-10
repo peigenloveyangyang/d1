@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--css引入-->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/help-main.css">
+    <link rel="stylesheet" href="css/help-newhand1.css">
+</head>
+<body>
+<!--头部开始-->
+<div id="head">
+    <div id="head-wrap">
+        <!--h-top-->
+        <div id="h-top">
+            <div id="h-top-in">
+                <div id="h-top-l">
+                    <p>你号，欢迎来到D1购物，请<a style="color:#8cc341;padding: 0 5px" href="#">登录</a>或<a style="color:#8cc341;padding: 0 5px" href="#">注册</a></p>
+                </div>
+                <div id="h-top-r">
+                    <ul>
+                        <li class="myAccountBtn">
+                            <a href="#">我的账户</a>
+                            <div id="myAccount">
+                                <ul>
+                                    <li>
+                                        <a href="#">我的订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的优惠劵</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的积分</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的晒单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的评论</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">订单查询</a></li>
+                        <li><a href="#">积分换购</a></li>
+                        <li><a href="help.html">帮助中心</a></li>
+                        <li style="float: right"><a href="#">在线客服</a></li>
+                        <li class="telD1Btn" style="float: right">
+                            <a href="#">手机优尚</a>
+                            <div id="telD1">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangchuangyishenghuo.jpg" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚创意生活</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>创意生活&nbsp;尽在掌握</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangmeizhuang.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚美妆</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>每周一次美妆特卖</p>
+                                        </div>
+                                    </li>
+                                    <li style="border-bottom: none">
+                                        <div>
+                                            <img src="img/head/app-tongyangerweima.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>下载APP</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>一元领取APP礼物</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--h-mid-->
+        <div id="h-mid">
+            <div class="h-mid-wrap">
+                <div>
+                    <img src="img/head/logo.png" alt="">
+                </div>
+                <div class="search">
+                    <div>
+                        <form class="bs-example bs-example-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="请输入您要搜索的商品名称或编码" class="form-control searchInput">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default searchBtn" type="button">搜索</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hotSearch">
+                        <span>热门搜索：</span>
+                        <ul>
+                            <li><a href="#">冰爽夏日</a></li>
+                            <li><a href="#">灭蚊</a></li>
+                            <li><a href="#">清仓</a></li>
+                            <li><a href="#">雨季</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhengping">
+                    <img src="http://images.d1.com.cn/Index/2015/help.jpg" alt="">
+                </div>
+                <div id="buyCar">
+                    <div>
+                        <img style="height: 33px" src="img/head/gouwu.png" alt="">
+                    </div>
+                    <div>
+                        <p>购物车 <span>0</span> 件</p>
+                    </div>
+                    <div class="xiala"></div>
+                    <div id="card">
+                        <p>您的购物车中暂无商品!</p>
+                        <div id="jiesuan">
+                            <div>
+                                <p>购物车中有<span>0</span>&nbsp;金额总计:<span>￥00.00</span>件商品</p>
+                            </div>
+                            <div id="jiesuanBtn">
+                                <a href="#">立即结算&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--h-bot-->
+        <div id="h-bot">
+            <div class="h-bot-in">
+                <ul>
+                    <li id="allgoods">
+                        <a href="#">全部商品</a>
+                        <div id="allgoodsBtn"></div>
+                        <div id="goodsInfo">
+                            <div class="goodsInfo-l">
+                                <ul>
+                                    <li>
+                                        <h3>护肤水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>彩妆香水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>个性配饰</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>创意家居</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>数码宝贝</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>时尚热点</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="goodsInfo-r">
+                                <div class="goodsInfo-r-div">
+                                    <h3>热卖品牌</h3>
+                                    <div class="goodsInfo-one">
+                                        <a href="#">洁面</a>
+                                        <a href="#">爽肤水</a>
+                                        <a href="#">精华</a>
+                                        <a href="#">乳液/面霜</a>
+                                        <a href="#">眼霜</a>
+                                        <a href="#">防晒隔离</a>
+                                        <a href="#">唇部护理</a>
+                                        <a href="#">面膜/面贴</a>
+                                        <a href="#">黑头角质</a>
+                                        <a href="#">护肤套装</a>
+                                        <a href="#">卸妆</a>
+                                        <a href="#">身体乳</a>
+                                        <a href="#">美体塑造</a>
+                                        <a href="#">脱毛</a>
+                                        <a href="#">护手霜</a>
+                                        <a href="#">男士护肤</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">化妆品</a></li>
+                    <li><a href="#">创意家居</a></li>
+                    <li><a href="#">创意数码</a></li>
+                    <li><a href="#">时尚装备</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+
+<!--内容开始-->
+<div id="content" style="width: 100%;">
+    <div id="content-center" style="width: 980px;margin: 0 auto;overflow: hidden;">
+        <div id="content-left">
+            <div id="content-left-top"></div>
+            <div id="content-left-first">
+                <h1><a href="help-newhand.html">新手指南</a></h1>
+                <ul>
+                    <li>
+                        <a href="help-newhand1.html">第一次购物体验</a>
+                    </li>
+                    <li><a href="help-newhand2.html">购物基本问题</a></li>
+                    <li><a href="help-newhand3.html">积分规则</a></li>
+                    <li><a href="help-newhand4.html">优惠券使用说明</a></li>
+                    <li><a href="help-newhand5.html">购物车下方0元抢购</a></li>
+                </ul>
+            </div>
+            <div id="content-left-second">
+                <h1><a href="help-pay.html">支付方式</a></h1>
+                <ul>
+                    <li>
+                        <a href="help-pay1.html">货到付款</a>
+                    </li>
+                    <li><a href="help-pay2.html">银行电汇</a></li>
+                    <li><a href="help-pay3.html">在线支付</a></li>
+                    <li><a href="help-pay4.html">邮局付款</a></li>
+                </ul>
+            </div>
+            <div id="content-left-third">
+                <h1><a href="help-dispatching.html">配送说明</a></h1>
+                <ul>
+                    <li>
+                        <a href="help-dispatching1.html">配送方式</a>
+                    </li>
+                    <li><a href="help-dispatching2.html">运费说明</a></li>
+                    <li><a href="help-dispatching3.html">配送范围</a></li>
+                </ul>
+            </div>
+            <div id="content-left-fourth">
+                <h1><a href="help-self-service.html">自助服务</a></h1>
+                <ul>
+                    <li>
+                        <a href="help-self-service1.html">会员密码取回</a>
+                    </li>
+                    <li><a href="help-self-service2.html"style="color: #da2f3b">物流信息查询</a></li>
+                    <li><a href="help-self-service3.html">联系客服</a></li>
+                </ul>
+            </div>
+            <div id="content-left-fifth">
+                <h1><a href="help-vip.html">会员服务</a></h1>
+                <ul>
+                    <li>
+                        <a href="help-vip1.html">普通会员</a>
+                    </li>
+                    <li><a href="help-vip2.html">VIP会员</a></li>
+                    <li><a href="help-vip3.html">白金会员</a></li>
+                    <li><a href="help-vip4.html">会员专区</a></li>
+                    <li><a href="help-vip5.html">促销邮件</a></li>
+                </ul>
+            </div>
+            <div id="content-left-sixth">
+                <h1><a href="help-customer-service.html">售后服务</a></h1>
+                <ul>
+                    <li>
+                        <a href="help-customer-service1.html">退换货说明</a>
+                    </li>
+                    <li><a href="help-customer-service2.html">退款方式</a></li>
+                    <li><a href="help-customer-service3.html">安全提醒</a></li>
+                    <li><a href="help-customer-service4.html">价格保护</a></li>
+                </ul>
+            </div>
+            <div id="content-left-seventh">
+                <h1><a href="help-investment.html">招商合作</a></h1>
+                <ul>
+                    <li>
+                        <a href="help-investment1.html">品牌合作</a>
+                    </li>
+                    <li><a href="help-investment2.html">关于D1优尚</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div id="content-right">
+            <div id="content-right-top">
+                <span><a href="help.html"><img src="http://images.d1.com.cn/images2012/New/help/9.jpg" alt=""></a></span>
+                <span><img src="http://images.d1.com.cn/images2012/New/help/10.jpg" alt=""></span>
+                <span><a href="help-customer-service.html">售后服务</a></span>
+            </div>
+            <div class="content-right-head">退换货说明</div>
+
+            <div class="content-right-neirong">
+                <div class="neirong-head">退换货说明</div>
+
+                <p><strong>一 D1品质保证原则</strong></p>
+                <p>&nbsp;</p>
+                <p>D1郑重承诺并保证：公司销售的商品均为真品，我们保证商品质量，假一赔二。本原则依据《中华人民共和国消费者权益保护法》、《中华人民共和国产品质量法》及其它规定制定。 凡在D1网上购物的顾客，如果您认为商品存在假货问题，请出据相关质检机关的证明或检测报告，经D1质检部确认核实我们将承诺假一赔二。</p>
+                <p>&nbsp;</p>
+                <p><strong>二 D1退换货总原则</strong></p>
+                <p>&nbsp;</p>
+                <p>D1保证所售出的商品都是通过正规渠道配货发货，您享有与其它途径购买的商品同样的服务。如果您所购买的产品存在质量问题，在未经使用的情况下，您可以享受30天退换货的服务</p>
+                <p>&nbsp;</p>
+                <p>  申请退换货可以自助操作：登录官网 <span><a href="#">订单查询</a></span>   ，点击 退换货申请，按步骤操作即可。如需人工帮助，请咨询在线客服： <span><a href="3"></a>在线客服</span> </p>
+                <p>以下情况不予办理退换货：</p>
+                <p>&nbsp;</p>
+                <p>（1）任何非由本公司出售的商品，不予办理退换货；</p>
+                <p>（2）任何已使用商品，不予办理退换货，但有质量问题除外；</p>
+                <p>（3）密封产品原包装打开，非质量问题不予退换；</p>
+                <p>（4）因人为疏忽或使用不当而导致的商品损坏不予退换；</p>
+                <p>（5）任何事先注明不在退换货范围的特殊商品，不予退换；</p>
+                <p>&nbsp;</p>
+                <p><strong>三 D1退换货流程</strong></p>
+                <p>&nbsp;</p>
+                <p> 1.登陆D1优尚网，点击“订单查询”，看到需要退换货的订单，点击“退换货处理”</p>
+                <p>&nbsp;</p>
+                <img src="http://images.d1.com.cn/edit/UploadFile/gdsimg/month_1404/201404101803366182.jpg" alt="">
+                <p>&nbsp;</p>
+                <p> 2.进入后选择“退货”或是“换货”</p>
+                <p>&nbsp;</p>
+                <img src="http://images.d1.com.cn/edit/UploadFile/gdsimg/month_1404/201404101726537501.jpg" alt="">
+                <p>&nbsp;</p>
+                <p> 3.选择“退货”后需要填写原因，如下图</p>
+                <p>&nbsp;</p>
+                <img src="http://images.d1.com.cn/edit/UploadFile/gdsimg/month_1512/201512271813546779.jpg" alt="">
+                <p>&nbsp;</p>
+                <p> 提交后如下图</p>
+                <p>&nbsp;</p>
+                <img src="http://images.d1.com.cn/edit/UploadFile/gdsimg/month_1512/201512271823053313.jpg" alt="">
+                <p>&nbsp;</p>
+                <p> 商家收到顾客退回的换货商品后，按顾客的需要发出顾客的换货商品，发出后会在顾客后台显示发货的快递单号与快递公司，如下图</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <img src="http://images.d1.com.cn/edit/UploadFile/gdsimg/month_1404/20140410174155951.jpg" alt="">
+                <p> 这样整个流程就操作完成了</p>
+                <p>&nbsp;</p>
+                <p> 5.运费报销问题  </p>
+                <p>&nbsp;</p><p>&nbsp;</p>
+                <table style="WIDTH: 441pt; BORDER-COLLAPSE: collapse" border="2" cellspacing="0" cellpadding="0" width="587">
+                    <tr>
+                        <td> 商品问题</td>
+                        <td> 报销运费</td>
+                        <td> 广东地区 </td>
+                        <td> 非广东地区</td>
+                        <td> 运费报销方式</td>
+                    </tr>
+                    <tr>
+                        <td>质量问题 </td>
+                        <td>是 </td>
+                        <td>最高报销10元 </td>
+                        <td>最高报销10元 </td>
+                        <td>存入客户预存款 </td>
+                    </tr>
+                    <tr>
+                        <td>非质量问题 </td>
+                        <td>否 </td>
+                        <td>顾客自负 </td>
+                        <td>顾客自负 </td>
+                        <td>无 </td>
+                    </tr>
+                </table>
+                <img src="http://images.d1.com.cn/edit/UploadFile/gdsimg/month_1309/201309281527341464.png" alt="">
+                <p>&nbsp;</p>
+                <p><strong>四、退换货地址</strong></p>
+                <p>&nbsp;</p>
+                <p>1、<strong style="color: red;">D1优尚网</strong>自营产品，退换货地址为：</p>
+                <p><strong style="color: darkgreen"> 广东省广州市白云区松北松岗中路11号 收件人：阿健 13168863197</strong></p>
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+                <p>2、<strong style="color: red;">平台商户</strong>提供的产品，退换货地址：</p>
+                <p>&nbsp;</p>
+                <p><strong style="color: red;font-size: 12px;"> 广东省广州市白云区松北松岗中路11号 收件人：阿健 13168863197</strong></p>
+                <p>&nbsp;</p>
+                <p><strong> 温馨提示：</strong></p>
+                <p>1、请务必将发货单同商品一起寄回。如发货单丢失，请另附一张纸，写清订单号，收货人姓名和联系电话，同商品一起寄回，以便我们及时为您处理。</p>
+                <p>2、请您选择普通快递将商品寄回（请勿使用平邮）。</p>
+                <p>&nbsp;</p>
+                <p><strong>五、 D1退换货特殊说明</strong></p>
+                <p>&nbsp;</p>
+                <p>（一） 退换货时限明细</p>
+                <table style="WIDTH: 441pt; BORDER-COLLAPSE: collapse" border="0" cellspacing="0" cellpadding="0" width="587">
+                    <tr>
+                        <td> 会员类别</td>
+                        <td> 退换货期限</td>
+                        <td> 退换货条件 </td>
+
+                    </tr>
+                    <tr>
+                        <td>普通会员 </td>
+                        <td>自收到之日起60日内</td>
+                        <td>包装和吊牌均完好无损，产品没有污迹和破损，未经使用过 </td>
+
+                    </tr>
+                    <tr>
+                        <td>VIP会员 </td>
+                        <td>自收到之日起60日内</td>
+                        <td>包装和吊牌均完好无损，产品没有污迹和破损，未经使用过 </td>
+                    </tr>
+                    <tr>
+                        <td>白金会员 </td>
+                        <td>自收到之日起60日内</td>
+                        <td>包装和吊牌均完好无损，产品没有污迹和破损，未经使用过 </td>
+                    </tr>
+                </table>
+                <p>&nbsp;</p>
+                <p>（二）退货方式及运费说明如下</p>
+                <p>&nbsp;</p>
+                <p>为保障您的权益，请与配送员当面核对商品种类、数量、规格、赠品、金额等是否与订单一致，准确无误再进行签收。对于非质量问题产生的退换货，需要您承担退回的运费；如商品质量问题发生退换，建议您先承担运费退回，我们收到后经质检部门检测，若属实会给您补偿运费。<strong style="font-size: 20ox;color: red;">拒收任何到付件</strong>！请亲谅解。</p>
+                <p>&nbsp;</p>
+                <p>（三）换货及退款问题说明如下</p>
+                <p>&nbsp;</p>
+                <p>1、货品退回后，我们会尽快将您所调换的货品寄出，或按您的要求将钱款退回给您；</p>
+                <p>2、如您要求调换的货品当时售缺，我们将为您办理退款。使用优惠券的订单，退款时优先退还同等优惠券</p>
+                <p>3、退款每周处理一次，款项按照您选择的退款方式办理。您可选择：a存入预存款账户，b原路退回。</p>
+                <p>4、如果订单中部分金额采用优惠券或预存款支付，在办理退货时，优先退优惠券，其他部分款额仍退回至预存款或原路退回。</p>
+                <p>5、如果由于办理退款的周期导致优惠券过期，客服人员可以将优惠券延期，延期的标准：时间为一周</p>
+                <p>&nbsp;</p>
+                <p>（四）不同品类商品退换货说明</p>
+                <p>&nbsp;</p>
+                <p style="color: red">化妆品商品退换货说明</p>
+                <p>化妆品使用效果因肤质、年龄、季节、气候、个人感觉、使用方法以及配套商品等的不同有所差异，D1保证不提供变质或过期化妆品，不接受因客户本人的喜好（气味，色泽、型号，外观）和个人肤质不同要求的退换货，若无质量问题，一律不予退换。部分化妆品有原装塑封，此类产品您需要先付款再拆封验货，不付款不能拆封，拆开后无质量问题一律不允许退换。彩妆类提供的色板因为电脑显示的不同有所差异，仅供参考。化妆品因产地不同也会发生外包装稍有差别现象，请以实物为准！</p>
+                <p>温馨提示：化妆品的使用效果及有无负作用是由各生产厂家决定与保证的，出现不适应现象，您需和厂家联系咨询。如果您对该商品细节有任何疑问，可在订购前详细咨询。</p>
+                <p>&nbsp;</p>
+                <p style="color: red">配件手表</p>
+                <p>手表、打火机、军刀等标准化商品，确保质量稳定，此类产品一经售出，无质量问题不予退换。（如果佩戴或使用后出现的质量问题可以根据相关产品的规定，在保修期内的进行维修）购买前建议您仔细阅读产品页面描述，或先到商场柜台试用，确定所需产品型号、外观及款式</p>
+                <p>&nbsp;</p>
+                <p style="color: red">内衣家居</p>
+                <p>考虑到客户使用的卫生、安全性，内衣类产品一经售出除质量问题外不得退换</p>
+                <p>&nbsp;</p>
+                <p style="color: red">鞋品</p>
+                <p>鞋类商品包装损坏（包括包裹填充物、品牌包装箱或外包装袋、鞋盒外直接缠胶带），以及鞋面、鞋底已磨损，已有穿着痕迹的情况，均不予以办理退换货</p>
+                <p>&nbsp;</p>
+                <p style="color: red">箱包皮具</p>
+                <p>商品因非正常使用及保管导致出现质量问题的商品，商品与附件（赠品、吊牌、防尘袋、包装塑料纸、商品发货单、发票等）不完整的情况，均不予以办理退换货。</p>
+                <p>&nbsp;</p>
+                <p style="color: red">饰品</p>
+                <p>首饰的原料为天然矿石或珍珠等，因为原料的天然原因，每个都会有所差异（如大小、杂质等），此项不作为退换货理由。请您在收到货物时，仔细按照发货单检查验收商品，因在佩戴使用后出现的破损等问题，不予退换货。</p>
+                <p>&nbsp;</p>
+                <p style="color: red">服装</p>
+                <p>服装大小、型号、材质等，商品介绍均有说明，因图片一般为扫描或拍照制成，如发生实物与网页介绍稍有不符，请以实物为准。无质量问题需自行承担退换货运费。</p>
+                <p>&nbsp;</p>
+                <p><strong>欢迎您对我们的服务给予监督和意见，以上售后服务退换货条款最终解释权归D1优尚所有。</strong></p>
+            </div>
+
+            <div class="content-right-head">退款方式</div>
+            <div class="content-right-neirong">
+                <div class="neirong-head">退款方式说明</div>
+                <p>1、 退款方式 </p>
+                <p>1）退款到D1的预存款账户，下次购物直接使用。 </p>
+                <p>2）在线支付货款的可以原渠道退回。 </p>
+                <p>3）退款到支付宝账户。（需要支付宝账户开通实名认证） </p>
+                <p>4）退款到银行账户工商银行，如果没工商银行，建设银行和农业银行的也可以但是相对来说要慢一些。</p>
+                <p>2、退款时效 </p>
+                <p>退款是D1财务统一操作，一般是一周操作一次，退款后给您注册时留的邮箱发邮件通知，收到邮件通知的客户退款一般是操作后2-3天到账户。若超过退款时效而未收到的可以拨打客服热线查询。</p>
+
+
+            </div>
+
+
+            <div class="content-right-head">安全提醒</div>
+            <div class="content-right-neirong">
+                <div class="neirong-head">D1优尚购物安全提醒</div>
+                <p>&nbsp;</p>
+                <p>亲爱的D1优尚会员：</p>
+                <p>近期，D1优尚客服中心接到部分客户来电反映：有自称D1优尚网会员部工作人员通过电话告知客户中奖或购买充值卡，并支付高额运费。 </p>
+                <p>客户举报的诈骗形式有： </p>
+                <p>1、电话促销推荐 </p>
+                <p>1）冒充D1优尚人员，向顾客推荐名牌化妆品，称原价1000多元的化妆品现只收300元。</p>
+                <p>2）冒充网站推广人员，谎称受D1优尚委托进行新品推广，可低价购买高价化妆品，并赠送电话充值卡。 </p>
+                <p>2、赠送充值卡，需支付运费</p>
+                <p>1）冒充客服人员，谎称网站回馈活动，赠送300元充值卡，并称对座机和手机均可充值，货到后向顾客索取高额运费。</p>
+                <p>2）冒充D1优尚物流部，谎称赠送价值1000多元的化妆品，并送300元电话充值卡，货到后向顾客索取高额运费和关税。</p>
+                <p>在此，郑重提醒广大客户：D1优尚网没有会员部，也不会以任何部门员工名义致电客户通知中奖信息并索取费用，请广大客户提高警惕。</p>
+                <p>我们所有正式活动信息都可以在D1优尚官方网站：http://www.d1.com.cn上查询到详细说明。</p>
+                <p>D1优尚已将此情况向警方备案。同时提醒所有客户，不要上当受骗，如遇此情况即向110报案。</p>
+                <p>客户举报的诈骗分子使用的电话显示号码（我们会随时更新）：01083235675 13161617262 010-83487902 </p>
+                <p>0105937220 14704303657 0059522180118 01059370224 010806672690105216655101052280574 D1优尚网客户服务中心</p>
+
+            </div>
+
+            <div class="content-right-head">价格保护</div>
+            <div class="content-right-neirong">
+                <div class="neirong-head">价格保护规则</div>
+                <p><strong>优尚网的商品价格随市场价格波动和促销优惠等活动的影响可能会产生变化，客户下订单后，某种商品很可能出现价格调整，优尚网出于对消费者利益的保护，推出价格保护服务。一、如何申请价格保护期限？</strong> </p>
+                <img src="http://images.d1.com.cn/edit/UploadFile/gdsimg/month_1404/201404221609018446.png" alt="">
+                <p>说明：1、 使用优惠券的订单，价格保护所产生的差额按照优惠券使用后实际支付金额计算。2、 价格保护申请成功（邮件/电话通过客服审核）后，差额在一周之内以优惠券或预存款形式返还。3、 价格保护申请成功后，如发生退换货，已补偿差价的订单，按照退还差价后的剩余金额办理退款。二、不享受价格保护的说明：1、 购买后商品进行限时秒杀、团购活动的商品不享受价格保护；2、 参与满赠满减（返）活动的商品不享受价格保护；3、 成功订购超过15天之后不享受价格保护；4、 特价清仓、断码、微瑕疵商品售价不作为正价商品的价格比价参考。 </p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--内容结束-->
+
+<!--底部开始-->
+<div id="foot">
+    <div id="foot-wrap">
+        <div id="foot-t">
+            <img src="img/foot/biaoyu.png" alt="">
+        </div>
+        <div id="foot-m">
+            <ul>
+                <li>
+                    <span>购物帮助</span>
+                    <a href="help-newhand2.html">购物的基本问题</a>
+                    <a href="help-newhand4.html">如何使用优惠劵</a>
+                    <a href="help-newhand3.html">如何累计并消费积分</a>
+                    <a href="help-newhand1.html">第一次购物体验</a>
+                </li>
+                <li>
+                    <span>支付方式</span>
+                    <a href="help-pay1.html">货到付款</a>
+                    <a href="help-pay2.html">银行电汇</a>
+                    <a href="help-pay3.html">网银支付</a>
+                    <a href="help-pay4.html">邮局汇款</a>
+                </li>
+                <li>
+                    <span>配送方式级费用</span>
+                    <a style="color: red" href="help-self-service2.html">物流信息查询</a>
+                    <a href="help-dispatching1.html">配送范围</a>
+                    <a href="help-dispatching2.html">配送方式</a>
+                    <a href="help-dispatching3.html">运费说明</a>
+                </li>
+                <li>
+                    <span>售后服务</span>
+                    <a href="help-customer-service.html">D1品质保证原则</a>
+                    <a href="help-customer-service.html">D1退换货总原则</a>
+                    <a href="help-customer-service.html">D1退换货地址及流程</a>
+                    <a href="help-customer-service.html">D1退换货特殊说明</a>
+                </li>
+                <li>
+                    <span>VIP特享政策</span>
+                    <a href="help-vip2.html">VIP会员的优惠及服务</a>
+                    <a href="help-vip2.html">如何获得和保持VIP</a>
+                    <a href="help-vip3.html">如何升级为白金VIP</a>
+                    <a href="help-vip3.html">白金VIP的优惠及服务</a>
+                </li>
+            </ul>
+            <img class="foot-m-r" src="img/foot/erweima.png" alt="">
+        </div>
+        <div id="foot-b">
+            <div class="foot-b-t">
+                <a href="help-self-service3.html">联系我们</a>
+                <a href="help-investment2.html">关于我们</a>
+                <a href="help-dispatching1.html">配送范围</a>
+                <a href="help-pay.html">如何付款</a>
+                <a href="help-investment1.html">品牌合作</a>
+                <a href="help-friend.html">友情链接</a>
+                <a style="border: none" href="http://www.kubolo.com/">全球创意购</a>
+            </div>
+        </div>
+        <div id="foot-mid">
+            <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202003031700010" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/wei_349.gif" width="45" height="50" border="0"></a>
+            <a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20130321002326002808" target="_blank"><img src="http://images.d1.com.cn/images2013/index/cx.png?l=CX20130321002326002808"></a>
+            <a href="http://images.d1.com.cn/images2010/2010ec100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/ceca.gif" width="117" height="42" border="0"></a>
+            <a href="http://images.d1.com.cn/images2010/dzxh91602_mwang.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/beca.gif" width="79" height="42"></a>
+            <a href="http://images.d1.com.cn/images2012/foot/2007_top100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/top100_logo.gif" border="0"></a>
+            <a href="http://www.ectrustprc.org.cn/seal/splash/1000016.htm" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/redlogo.gif" border="0"></a>
+        </div>
+        <div id="foot-bot">
+            京ICP证030072号&nbsp;&nbsp;京公网安备：110108905029 &nbsp;&nbsp;www.D1.com.cn Copyright 2002-2016 D1优尚网 版权所有
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+<!--js引入-->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

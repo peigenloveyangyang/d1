@@ -1,0 +1,46 @@
+#content-right{
+    width: 752px;
+    float: right;
+    margin-top: 10px;
+    border: 1px solid darkgray;
+}
+#content-right-top{
+    height:33px ;
+    border-bottom: 1px solid black;
+    background-color: #f2f2f2;
+    line-height: 33px;
+}
+ #content-right-top span a{
+    font-size: 16px;
+     color: black;
+}
+#content-right-top span a:hover{
+
+    color:indianred;
+}
+#content-right .content-right-head{
+     width:700px;
+     height: 39px;
+     margin-top: 16px;
+     margin-left:15px ;
+     border-bottom: 1px solid black;
+     text-align: center;
+     font-size: 16px;
+ }
+#content-right .content-right-neirong{
+    width: 700px;
+    margin-left:15px ;
+   font-size: 14px;
+}
+#content-right .neirong-head{
+    width: 750px;
+    height: 54px;
+    background-image:url(http://images.d1.com.cn/images2012/New/help/GWTY.jpg) ;
+    background-repeat: no-repeat;
+    background-color: white;
+    padding-left: 52px;
+    padding-top: 15px;
+}
+img{
+    vertical-align: top;
+}

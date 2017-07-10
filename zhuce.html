@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<link rel="stylesheet" href="css/l_login.css">
+<link rel="stylesheet" href="css/foot.css">
+<link rel="stylesheet" href="css/reset.css">
+<style>
+    .z_zhuce1{margin: 100px auto;width: 100%;}
+    .z_zhu_1{margin: 0px auto;width: 756px;height: 76px;background: url(http://images.d1.com.cn/images2012/login/zc_03-2.jpg) no-repeat;margin-top: 10px;overflow: hidden;}
+    .z_zhu_1 img{float: right;margin:15px 30px 0 0;cursor: pointer;}
+    .z_zhu_1 span{margin:20px 0 0 500px;color: #fff;font-size: 16px;display: inline-block;}
+    .z_zhu_2{margin: 0px auto;width: 756px;background: url(http://images.d1.com.cn/images2012/login/zc_06.jpg);padding-top: 20px;height: 399px;}
+    .z_zhu_2>strong{font-size: 16px;  color: #d1436b;padding:0 0 30px 14px;line-height: 22px;}
+    .z_zhu_3{margin: 0px auto;width: 756px;}
+    .z_zhu_2>ul{width: 90px;height: 270px;margin: 40px 0 0 80px;color: #333;font-size: 14px;text-align: right;line-height: 22px;}
+    .z_zhu_2>ul li{margin-bottom: 20px;}
+    .z_zhu_2_1{width: 560px;height: 220px;position: absolute;top: 292px;right: 138px;}
+    .z_zhu_2_1 .z_a{width: 220px;border: solid 1px #ababab;background-color: #f4f4f4;height: 22px;}
+    #code_input{border: solid 1px #ababab;background-color: #f4f4f4;height: 22px;width: 118px;margin-top: 22px;margin-bottom: 16px;}
+    .z_zhu_2_1>div{display: inline-block;position: absolute;top:30px;}
+    .z_a1{margin-top: 30px;margin: 22px 0 19px 0;}
+    #z_btn{width: 120px;height: 35px;height-line: 35px;background-color: #791268;color: white; font-size: 18px;font-weight: bold;padding: 0 10px 0 10px;cursor: pointer;margin-left: 320px;}
+</style>
+<body>
+<div class="l_bod">
+    <div class="l_mid">
+        <h1><a href="###"></a></h1>
+        <span class="l_login1">你好，欢迎来到D1购物，请&nbsp;<a href="" style="color:#8cc341">登录</a>&nbsp;或&nbsp;<a href="" target="_blank" style="color:#8cc341">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="l_login2"><a href="">我的帐户</a>| <a href="">订单查询</a>| <a href="">我的优惠券</a>| <a href="">积分换购</a>|<a href="">帮助中心</a></span>
+
+        <div class="z_zhuce1">
+            <div class="z_zhu_1">
+                <a href="login.html">
+                <span>已有账户</span><img src="http://images.d1.com.cn/images2012/login/reglogin.png" alt="">
+                </a>
+            </div>
+            <div class="z_zhu_2">
+                <strong>填写注册信息</strong>
+                <ul>
+                    <li>*手机号码：</li><br><br>
+                    <li>*您的性别：</li>
+                    <li>*设置密码：</li>
+                    <li>*确认密码：</li>
+                </ul>
+                <div class="z_zhu_2_1">
+                    <input id="user" class="z_a" type="text"><br>
+                    <input type="text" id="code_input" value="" placeholder="请输入验证码"/>
+                    <div id="v_container" style="width: 130px;height: 40px;"></div><br>
+                    <input name="sex" type="radio" value=""> 男 <input name="sex" type="radio" value=""> 女 <br>
+                    <input id="pass1" class="z_a z_a1" type="password"><br>
+                    <input id="pass2" class="z_a" type="password">
+                </div>
+                <input type="button" value="立即注册" id="z_btn"/>
+            </div>
+            <div class="z_zhu_3">
+                <img src="http://images.d1.com.cn/images2012/login/zc_08.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="js/gVerify.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    var verifyCode = new GVerify("v_container");
+    document.getElementById("z_btn").onclick = function(){
+        var user = $("#user").val();
+        var pass = $("#pass1").val();
+        var pass2 = $("#pass2").val();
+//        console.log(pass);
+
+        if(!(/^1[34578]\d{9}$/.test(user))){
+            alert("手机号码有误，请重填!");
+            return;
+        }
+        var res = verifyCode.validate(document.getElementById("code_input").value);
+        if(!res){
+            alert("验证码错误!");
+            return;
+        }
+        if(user == ""||pass == ""||pass2 == ""){
+            alert("用户名或密码不能为空!");
+            return;
+        }
+        if(!(/^[a-zA-Z0-9]{6,10}$/.test(pass))){
+            alert("密码必须是6-10位大小写字母数字，请重填!");
+            return;
+        }
+
+        if(pass != pass2){
+            alert("两次输入密码不一致，请重新输入!");
+            return;
+        }
+        $.ajax({
+            type:"get",
+            url:"http://10.80.11.213:8080/zhuce",
+            async:true,
+            data:{
+                user:user,
+                pass:pass
+            },
+            dataType:"jsonp",
+            jsonp:"cb",
+            success:function(json){
+                 console.log(json);
+                if(json.error == 0){
+                    alert("注册成功！请返回登陆！");
+                    window.location.href = "login.html";
+                }else if(json.error == 1){
+                    alert("用户名重复，注册失败！");
+                }
+            }
+        });
+    }
+</script>
+</html>

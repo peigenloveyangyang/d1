@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--css引入-->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/buypage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+</head>
+<body>
+<!--头部开始-->
+<div id="head">
+    <div id="head-wrap">
+        <!--h-top-->
+        <div id="h-top">
+            <div id="h-top-in">
+                <div id="h-top-l">
+
+                </div>
+                <div id="h-top-r">
+                    <ul>
+                        <li class="myAccountBtn">
+                            <a href="#">我的账户</a>
+                            <div id="myAccount">
+                                <ul>
+                                    <li>
+                                        <a href="#">我的订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的优惠劵</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的积分</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的晒单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的评论</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">订单查询</a></li>
+                        <li><a href="#">积分换购</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li style="float: right"><a href="#">在线客服</a></li>
+                        <li class="telD1Btn" style="float: right">
+                            <a href="#">手机优尚</a>
+                            <div id="telD1">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangchuangyishenghuo.jpg" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚创意生活</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>创意生活&nbsp;尽在掌握</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangmeizhuang.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚美妆</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>每周一次美妆特卖</p>
+                                        </div>
+                                    </li>
+                                    <li style="border-bottom: none">
+                                        <div>
+                                            <img src="img/head/app-tongyangerweima.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>下载APP</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>一元领取APP礼物</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--h-mid-->
+        <div id="h-mid">
+            <div class="h-mid-wrap">
+                <div>
+                    <img src="img/head/logo.png" alt="">
+                </div>
+                <div class="search">
+                    <div>
+                        <form class="bs-example bs-example-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input-group">
+                                        <input id="searchTxt" type="text" placeholder="请输入您要搜索的商品名称或编码" class="form-control searchInput">
+                                        <a id="searchBot" class="input-group-btn">
+                                            <button class="btn btn-default searchBtn" type="button">搜索</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hotSearch">
+                        <span>热门搜索：</span>
+                        <ul>
+                            <li><a href="search/summer.html">冰爽夏日</a></li>
+                            <li><a href="cosmetics.html?productsort=5&">灭蚊</a></li>
+                            <li><a href="cosmetics.html?productsort=6&">清仓</a></li>
+                            <li><a href="cosmetics.html?productsort=7&">雨季</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhengping">
+                    <img src="http://images.d1.com.cn/Index/2015/help.jpg" alt="">
+                </div>
+                <div id="buyCar">
+                    <div>
+                        <img style="height: 33px" src="img/head/gouwu.png" alt="">
+                    </div>
+                    <div>
+                        <p>购物车 <span>0</span> 件</p>
+                    </div>
+                    <div class="xiala"></div>
+                    <div id="card">
+                        <p>您的购物车中暂无商品!</p>
+                        <div id="jiesuan">
+                            <div>
+                                <p>购物车中有<span>0</span>&nbsp;金额总计:<span>￥00.00</span>件商品</p>
+                            </div>
+                            <div id="jiesuanBtn">
+                                <a href="#">立即结算&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--h-bot-->
+        <div id="h-bot">
+            <div class="h-bot-in">
+                <ul>
+                    <li id="allgoods">
+                        <a href="#">全部商品</a>
+                        <div id="allgoodsBtn"></div>
+                        <div id="goodsInfo">
+                            <div class="goodsInfo-l">
+                                <ul>
+                                    <li>
+                                        <h3>护肤水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>彩妆香水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>个性配饰</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>创意家居</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>数码宝贝</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>时尚热点</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="goodsInfo-r">
+                                <div class="goodsInfo-r-div">
+                                    <h3>热卖品牌</h3>
+                                    <div class="goodsInfo-one">
+                                        <a href="#">洁面</a>
+                                        <a href="#">爽肤水</a>
+                                        <a href="#">精华</a>
+                                        <a href="#">乳液/面霜</a>
+                                        <a href="#">眼霜</a>
+                                        <a href="#">防晒隔离</a>
+                                        <a href="#">唇部护理</a>
+                                        <a href="#">面膜/面贴</a>
+                                        <a href="#">黑头角质</a>
+                                        <a href="#">护肤套装</a>
+                                        <a href="#">卸妆</a>
+                                        <a href="#">身体乳</a>
+                                        <a href="#">美体塑造</a>
+                                        <a href="#">脱毛</a>
+                                        <a href="#">护手霜</a>
+                                        <a href="#">男士护肤</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="cosmetics.html?productsort=1&">化妆品</a></li>
+                    <li><a href="cosmetics.html?productsort=2&">创意家居</a></li>
+                    <li><a href="cosmetics.html?productsort=3&">创意数码</a></li>
+                    <li><a href="cosmetics.html?productsort=4&">时尚装备</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+
+<!--内容开始-->
+<div class="p_box">
+    <div class="p_mid">
+        <div class="p_mid_1"></div>         <!-- 图片展示块 -->
+        <span class="p_mid_2">D1优尚网</span>
+
+        <div id="p_kuang">
+        <!--<div id="p_pic1">
+            <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616145756_1_400.jpg"/>
+            <div id="p_backg"></div>
+        </div>
+        <div id="p_pic2"><img id="p_ig" src="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616145756_1.jpg" alt="" /></div>
+        <ul class="p_ul1">
+            <li><a href="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616145756_1.jpg"><img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616145756_1_80.jpg" alt=""></a></li>
+            <li><a href="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151810_3.jpg"><img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151810_3_60.jpg" alt=""></a></li>
+            <li><a href="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151813_4.jpg"><img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151813_4_60.jpg" alt=""></a></li>
+            <li><a href="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151816_5.jpg"><img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151816_5_60.jpg" alt=""></a></li>
+            <li><a href="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151824_6.jpg"><img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/06/16/0120740220170616151824_6_60.jpg" alt=""></a></li>
+        </ul>
+        <div class="p_right1">              <!-- 图片右边有关的数据块
+            <h4 class="h4">Elmie日本进口女士专用 内衣内裤杀菌洗衣液 去血渍洗涤剂200ml</h4>
+            <h5 class="h5">强效去血渍，内衣裤专用抑菌去污神器</h5>
+            <div class="p_con1">
+                <span>￥<em>65.00</em></span><span><em>6.8</em>折</span>
+                <div>市场价:￥<del>94.00</del></div>
+            </div>
+            <div class="p_con2"><span>D1价</span></div>
+            <div class="p_con3">
+                vip价：￥<span>64.00</span>白金价：￥<span>63.00</span>
+            </div>
+            <div class="p_font1">商品编码：<span>01207402</span></div>
+            <div class="p_font2">服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：由<span>D1优尚网</span>发货，开具发票并提供售后服务。</div>
+            <div class="p_font3">顾客评分：<span><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></span><span>(已有<em>9</em>人评价)</span></div>
+            <div class="p_font4">购买数量：<span class="p_f1">-</span><span class="p_f2">1</span>
+                <span class="p_f3">+</span></div>
+            <div class="p_font5"><img src="http://images.d1.com.cn/images2014/product/frgwc.png" alt=""><img src="http://images.d1.com.cn/images2014/product/jrsc.png" alt=""></div>
+        </div>-->
+        </div>
+
+
+        <div class="p_click"><img src="http://images.d1.com.cn/images2012/New/fdtp.gif" alt=""> 点击放大图片</div>
+        <div class="p_share">
+            <a href="###"><img src="http://images.d1.com.cn/images2012/New/p_013-2.png" alt=""></a> &nbsp;&nbsp;&nbsp;
+            <a href="###"><img src="http://images.d1.com.cn/images2012/New/sina.gif" alt="分享到新浪微博"></a>
+            <a href="###"><img src="http://images.d1.com.cn/images2012/New/sohuwb.gif" alt="分享到搜狐微博"></a>
+            <a href="###"><img src="http://images.d1.com.cn/images2012/New/wb.gif" alt="转播到腾讯微博"></a>
+            <a href="###"><img src="http://images.d1.com.cn/images2012/New/qq.gif" alt="分享到QQ空间"></a>
+        </div>
+        <div class="p_gg">
+            <div class="p_jin_left"><!-- 最近浏览区域 -->
+                <p>-购买过本商品的用户还购买过-</p>
+                <ul>
+                    <li>
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/12/08/0120713220161212172243_1_160.jpg" alt="">
+                        <p>SupBro防水防尘防污超级喷雾 鞋子护理</p>
+                        <span>￥<em>88.00</em></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>￥<del>159.0</del></span>
+                    </li>
+                    <li>
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/03/10/0120727620170313193945_1_160.jpg" alt="">
+                        <p>SUPER速啪洗鞋子喷雾套装：一喷一擦，快速清洁</p>
+                        <span>￥<em></em>139.00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>￥<del>199.0</del></span>
+                    </li>
+                    <li>
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/11/17/0120710720170209162733_1_160.jpg" alt="">
+                        <p>挪威unikia子弹头鞋子净化胶囊</p>
+                        <span>￥<em>78.00</em></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>￥<del>199.0</del></span>
+                    </li>
+                    <li>
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/02/16/0120719320170221165459_1_160.jpg" alt="">
+                        <p>微鱼超声波便携迷你洗衣机</p>
+                        <span>￥<em>368.00</em></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>￥<del>398.0</del></span>
+                    </li>
+                    <li>
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2017/05/04/0120733720170508161013_1_160.jpg" alt="">
+                        <p>E立新天然速溶浓缩洗衣片（80片）</p>
+                        <span>￥<em>38.00</em></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>￥<del>49.0</del></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p_jin_left2">-----最近浏览的商品-----</div>
+            <div class="p_right_xuanxiangka">
+                <ul class="p_x_ul1">
+                    <li class="p_lis1">商品信息</li>
+                    <li>顾客评论</li>
+                    <li>商品问答</li>
+                    <li>售后及配送</li>
+                </ul>
+                <ul class="p_x_ul2">
+                    <li class="p_lis2">
+                        <div class="p_goods"><img src="http://images.d1.com.cn/images2012/New/spxq.jpg" alt="">商品详情</div>
+                        <span>一款为女性研发的泡沫洗涤剂</span>
+                        <p>无添加，无香料，无防腐剂，无着色料；<br>
+                            深层去污，<span>抗菌抑菌；</span><br>
+                            健康亲肤，自然清香；<br>
+                            <span>轻松瓦解多种污渍；</span><br>
+                            各类内衣裤残留细菌，一网打尽；
+                        </p>
+                        <p class="p_pics">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/13faabe6-9d7a-4821-a799-2060705fc301.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/7192c095-a890-41ef-94bc-91088c176089.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/49d6aefe-1dee-4702-b570-46569f82f107.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/5dfbab88-2576-469c-ab44-1edbd06f60c6.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/b0ed7753-6e43-4678-8aa6-9aefaaad0ea4.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/837ecac6-011c-4679-a66c-a83717844a25.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/a9d21a61-32cf-40d9-a9b6-ae818c62f9a2.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/5cfb66c4-5651-4c28-b99c-7860cab4fb9f.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/3ea82ad1-4476-40e8-b54a-69c36b6a1573.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/bdb3dd49-c2dc-4a86-9403-8281799a76b4.jpg" alt="">
+                            <img src="http://images1.d1.com.cn/shopimg/gdsimg/201706/image/bc787541-0f8d-40b8-8030-9cc55342530f.jpg" alt="">
+                        </p>
+                    </li>
+                    <li>
+                        <p><img src="http://images.d1.com.cn/Index/images/gkpl_star.gif" alt="">顾客评论</p>
+                        <div>购买过得顾客评分 | <em><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></em></div>
+                        <ul class="p_pinlun">
+                            <li>
+                                <div>
+                                    <img src="http://images.d1.com.cn/images2012/New/hyimg.jpg" alt="">
+                                    <span class="p_pinlun_sp">1232088302057</span>
+                                    <span>普通会员</span>
+                                </div>
+                                <div>
+                                    <div>评分：<em><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></em><p><span>2017</span>-<span>6</span>-<span>23</span></p></div>
+                                    <p>很干净，味道清香，很不错</p>
+                                </div>
+                                <div class="p_tl"></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="http://images.d1.com.cn/images2012/New/hyimg.jpg" alt="">
+                                    <span class="p_pinlun_sp">1232088302057</span>
+                                    <span>普通会员</span>
+                                </div>
+                                <div>
+                                    <div>评分：<em><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></em><p><span>2017</span>-<span>6</span>-<span>23</span></p></div>
+                                    <p>很干净，味道清香，很不错</p>
+                                </div>
+                                <div class="p_tl"></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="http://images.d1.com.cn/images2012/New/hyimg.jpg" alt="">
+                                    <span class="p_pinlun_sp">1232088302057</span>
+                                    <span>普通会员</span>
+                                </div>
+                                <div>
+                                    <div>评分：<em><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></em><p><span>2017</span>-<span>6</span>-<span>23</span></p></div>
+                                    <p>很干净，味道清香，很不错</p>
+                                </div>
+                                <div class="p_tl"></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="http://images.d1.com.cn/images2012/New/hyimg.jpg" alt="">
+                                    <span class="p_pinlun_sp">1232088302057</span>
+                                    <span>普通会员</span>
+                                </div>
+                                <div>
+                                    <div>评分：<em><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></em><p><span>2017</span>-<span>6</span>-<span>23</span></p></div>
+                                    <p>很干净，味道清香，很不错</p>
+                                </div>
+                                <div class="p_tl"></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="http://images.d1.com.cn/images2012/New/hyimg.jpg" alt="">
+                                    <span class="p_pinlun_sp">1232088302057</span>
+                                    <span>普通会员</span>
+                                </div>
+                                <div>
+                                    <div>评分：<em><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></em><p><span>2017</span>-<span>6</span>-<span>23</span></p></div>
+                                    <p>很干净，味道清香，很不错</p>
+                                </div>
+                                <div class="p_tl"></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="http://images.d1.com.cn/images2012/New/hyimg.jpg" alt="">
+                                    <span class="p_pinlun_sp">1232088302057</span>
+                                    <span>普通会员</span>
+                                </div>
+                                <div>
+                                    <div>评分：<em><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></em><p><span>2017</span>-<span>6</span>-<span>23</span></p></div>
+                                    <p>很干净，味道清香，很不错</p>
+                                </div>
+                                <div class="p_tl"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>温馨提示：因厂家更改商品包装、产地或者更换随机附件等没有任何提前通知，且每位咨询者购买情况、提问时间等不同，为此以下回复仅对提问者3天内有效，其他网友仅供参考！若由此给您带来不便请多多谅解，谢谢！
+                        </div>
+                        <div>发表咨询</div>
+                        <p>声明：您可在购买前对产品包装、颜色、运输、库存等方面进行咨询，我们有专人进行回复！因厂家随时会更改一些产品的包装、颜色、产地等参数，所以该回复仅在当时对提问者有效，其他网友仅供参考！咨询回复的工作时间为：周一至周日：9:00至21:00，请耐心等待工作人员的回复。</p>
+                        <div>咨询类型
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" checked id="inlineRadio1" value="option1"> 商品咨询</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 库存及配送</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 支付问题</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3"> 发票机保修</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option3"> 促销及赠品</label>
+                        </div>
+                        <div><span>咨询内容</span><br>
+                            <textarea name="" id="" cols="98" rows="12"></textarea><br>
+                            <img src="http://images.d1.com.cn/Index/images/submit.jpg" alt="提交">
+                        </div>
+
+                    </li>
+                    <li>
+                        <p>因厂商会在没有任何提前通知的情况下更改商品包装、产地或者一些附件，因此您收到的商品有可能与我们提供的图片、附件说明不完全一致,请您以收到商品的包装清单为准。D1可确保为原装正品。同时我们会尽量做到及时更新,若由此给您带来不便敬请谅解！</p>
+                        <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                        <p>
+                            服&nbsp;&nbsp;&nbsp;务：&nbsp;&nbsp;&nbsp;此商品由&nbsp;&nbsp;&nbsp;<span>D1优尚网</span>&nbsp;&nbsp;&nbsp;负责发货，开具发票及售后服务
+                            <br>
+                            发&nbsp;&nbsp;&nbsp;货：&nbsp;&nbsp;&nbsp;从&nbsp;&nbsp;&nbsp;广东省广州市&nbsp;&nbsp;&nbsp;发出<br>
+                            配&nbsp;&nbsp;&nbsp;送：&nbsp;&nbsp;&nbsp;默认&nbsp;&nbsp;圆通快递&nbsp;&nbsp;&nbsp;或&nbsp;&nbsp;&nbsp;EMS<br>
+                            退换货地址：&nbsp;&nbsp;请按< 发货单 >上的退换货地址寄回。
+                        </p>
+                        <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                        <p>
+                            <strong>D1商品退换货一般性规定：</strong><br>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D1保证所售出的商品都是通过正规渠道配货发货，您享有与其它途径购买的商品同样的服务。如果您所购买的产品存在质量问题，在未经使用的情况下，您可以享受 30 天退换货的服务。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;申请退换货可以自助操作：登录官网&nbsp;&nbsp;<a href="###">订单查询</a>&nbsp;&nbsp;，点击 退换货申请，按步骤操作即可。如需人工帮助，请咨询在线客服：&nbsp;<a href="###">在线客服</a><br>
+                            &nbsp;以下情况不予办理退换货：<br>
+                            &nbsp;&nbsp;（1）任何非由本公司出售的商品，不予办理退换货；<br>
+                        <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容结束-->
+
+<!--底部开始-->
+<div id="foot">
+    <div id="foot-wrap">
+        <div id="foot-t">
+            <img src="img/foot/biaoyu.png" alt="">
+        </div>
+        <div id="foot-m">
+            <ul>
+                <li>
+                    <span>购物帮助</span>
+                    <a href="#">购物的基本问题</a>
+                    <a href="#">如何使用优惠劵</a>
+                    <a href="#">如何累计并消费积分</a>
+                    <a href="#">第一次购物体验</a>
+                </li>
+                <li>
+                    <span>支付方式</span>
+                    <a href="#">货到付款</a>
+                    <a href="#">银行电汇</a>
+                    <a href="#">网银支付</a>
+                    <a href="#">邮局汇款</a>
+                </li>
+                <li>
+                    <span>配送方式级费用</span>
+                    <a style="color: red" href="#">物流信息查询</a>
+                    <a href="#">配送范围</a>
+                    <a href="#">配送方式</a>
+                    <a href="#">运费说明</a>
+                </li>
+                <li>
+                    <span>售后服务</span>
+                    <a href="#">D1品质保证原则</a>
+                    <a href="#">D1退换货总原则</a>
+                    <a href="#">D1退换货地址及流程</a>
+                    <a href="#">D1退换货特殊说明</a>
+                </li>
+                <li>
+                    <span>VIP特享政策</span>
+                    <a href="#">VIP会员的优惠及服务</a>
+                    <a href="#">如何获得和保持VIP</a>
+                    <a href="#">如何升级为白金VIP</a>
+                    <a href="#">白金VIP的优惠及服务</a>
+                </li>
+            </ul>
+            <img class="foot-m-r" src="img/foot/erweima.png" alt="">
+        </div>
+        <div id="foot-b">
+            <div class="foot-b-t">
+                <a href="#">联系我们</a>
+                <a href="#">关于我们</a>
+                <a href="#">配送范围</a>
+                <a href="#">如何付款</a>
+                <a href="#">品牌合作</a>
+                <a href="#">友情链接</a>
+                <a style="border: none" href="#">全球创意购</a>
+            </div>
+        </div>
+        <div id="foot-mid">
+            <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202003031700010" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/wei_349.gif" width="45" height="50" border="0"></a>
+            <a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20130321002326002808" target="_blank"><img src="http://images.d1.com.cn/images2013/index/cx.png?l=CX20130321002326002808"></a>
+            <a href="http://images.d1.com.cn/images2010/2010ec100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/ceca.gif" width="117" height="42" border="0"></a>
+            <a href="http://images.d1.com.cn/images2010/dzxh91602_mwang.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/beca.gif" width="79" height="42"></a>
+            <a href="http://images.d1.com.cn/images2012/foot/2007_top100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/top100_logo.gif" border="0"></a>
+            <a href="http://www.ectrustprc.org.cn/seal/splash/1000016.htm" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/redlogo.gif" border="0"></a>
+        </div>
+        <div id="foot-bot">
+            京ICP证030072号&nbsp;&nbsp;京公网安备：110108905029 &nbsp;&nbsp;www.D1.com.cn Copyright 2002-2016 D1优尚网 版权所有
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+<!--js引入-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="js/buypage.js"></script>
+<script src="js/cookie.js"></script>
+<script>
+    var name=getCookie("name");
+    var states=getCookie("states");
+    if(states=="true"){
+//        alert("有name")
+        var newP = document.createElement("p");
+        newP.innerHTML=(`
+            ${name},你好!欢迎来到D1购物
+        `),
+            $("#h-top-l").append(newP);
+
+
+    }else{
+        var newP2 = document.createElement("p");
+        newP2.innerHTML=(`
+            <p>你好，欢迎来到D1购物，请<a style="color:#8cc341;padding: 0 5px" href="login.html">登录</a>或<a style="color:#8cc341;padding: 0 5px" href="zhuce.html">注册</a></p>
+        `),
+            $("#h-top-l").append(newP2);
+
+
+    }
+</script>
+<script>
+    //获取？后面的数据
+    var all = window.location.search;
+    var r = all.substring(all.indexOf("=")+1,all.indexOf("&"));
+    var c = all.substring(all.indexOf("?")+1,all.indexOf("="));
+    console.log(r);
+    console.log(c);
+    var s = all.substring(all.lastIndexOf("&")+1,all.lastIndexOf("="));
+    var n = all.substring(all.lastIndexOf("=")+1,all.length);
+    console.log(s);
+    console.log(n);
+    if(n=="true"){
+        $.ajax({
+            type: "get",
+            url: "http://10.80.11.213:8080/product",
+            data:{
+                getclass:c,
+                getcontent:r,
+//            cb:"shows1"
+            },
+            dataType: "jsonp",
+            jsonp:"cb",
+            success: function (data) {
+                var p_con = $('#p_kuang');
+//            console.log(data);
+                var pro = data[0];
+                console.log(pro)
+                // console.log(pro.productName)
+                var div = document.createElement("div");
+
+                div.innerHTML = '<div id="p_pic1"><img src="'+pro.imgPath+'"/><div id="p_backg"></div></div><div id="p_pic2"><img id="p_ig" src="'+pro.bigImgPath+'" alt="" /></div><ul class="p_ul1"><li><a href="'+pro.bigImgPath+'"><img src="'+pro.smallImgPath1+'" alt=""></a></li><li><a href="'+pro.bigImgPath2+'"><img src="'+pro.smallImgPath2+'" alt=""></a></li><li><a href="'+pro.bigImgPath3+'"><img src="'+pro.smallImgPath3+'" alt=""></a></li></ul><div class="p_right1"><h4 class="h4">'+pro.productName+'</h4><h5 class="h5">'+pro.intro+'</h5><div class="p_con1"> <span>￥<em>'+pro.newPrice+'</em></span><span><em>6.8</em>折</span> <div>市场价:￥<del>'+pro.oldPrice+'</del></div></div><div class="p_con2"><span>D1价</span></div><div class="p_con3">vip价：￥<span>'+pro.vipPrice+'</span>白金价：￥<span>'+pro.whiteGodPrice+'</span></div><div class="p_font1">商品编码：<span>'+pro.coding+'</span></div><div class="p_font2">服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：由<span>D1优尚网</span>发货，开具发票并提供售后服务。</div><div class="p_font3">顾客评分：<span><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></span><span>(已有<em>'+pro.comment+'</em>人评价)</span></div><div class="p_font4">购买数量：<span class="p_f1">-</span><span id="p_f2" class="p_f2">1</span><span class="p_f3">+</span></div> <div class="p_font5"><img id="inbuycar" src="http://images.d1.com.cn/images2014/product/frgwc.png" alt=""><img src="http://images.d1.com.cn/images2014/product/jrsc.png" alt=""></div></div>';
+                p_con.append(div);
+
+
+                $("div #inbuycar").click(function () {
+                    var buynumber=$("#p_f2").html();
+                    window.location.href="shopping/shopping2.html?info1="+pro.coding+"&info2="+buynumber;
+
+//                    setCookie("info3",pro.coding);
+                })
+
+
+
+                $('#p_pic1').on('mouseover',function () {
+                    $('#p_backg').show();     //show();
+                    $('#p_pic2').show();
+                    $('#p_pic1').on('mousemove',function (event) {
+                        var x= event.clientX - $('#p_pic1').offset().left-$('#p_backg').width()/2;
+                        var y= event.clientY - $('#p_pic1').offset().top-$('#p_backg').height()/2;
+                        //限制范围
+                        var maxx = $('#p_pic1').innerWidth() - $('#p_backg').outerWidth();
+                        var maxy = $('#p_pic1').innerHeight() - $('#p_backg').outerHeight();
+                        if(x<0){ x=0; }else if(x>maxx){	x=maxx; }
+                        if(y<0){ y=0; }else if(y>maxy){ y=maxy; }
+                        //算出左侧移动值占可移动值得比例
+                        var scalex = x/maxx;
+                        var scaley = y/maxy;
+                        var X1 = $('#p_ig').outerWidth()-$('#p_pic2').innerWidth();
+                        var Y1 = $('#p_ig').outerHeight()-$('#p_pic2').innerHeight();
+                        $('#p_ig').css({
+                            left:-scalex*X1,
+                            top:-scaley*Y1
+                        });
+                        $('#p_backg').css({
+                            left:x,
+                            top:y,
+                        });
+
+                    })
+                })
+                $('#p_pic1').on('mouseout',function () {
+                    $('#p_backg').hide();
+                    $('#p_pic2').hide();
+                })
+
+                var img1 = $('.p_star');
+                img1.css({
+                    'marginTop':'-203px'
+                })
+                var num =1;
+                $('.p_f1').click(function () {
+                    num--;
+                    if(num<=1){
+                        num = 1;
+                    }
+                    $('.p_f2').html(num);
+                })
+                $('.p_f3').click(function () {
+                    num++;
+                    // console.log(num);
+                    $('.p_f2').html(num);
+                })
+
+                $('.p_ul1>li:nth-child(1)').on("mouseover",function () {
+                    $('#p_pic1 img').attr("src",pro.imgPath);
+                    $('#p_pic2 img').attr("src",pro.bigImgPath);
+                })
+                $('.p_ul1>li:nth-child(2)').on("mouseover",function () {
+                    $('#p_pic1 img').attr("src",pro.imgPath2);
+                    $('#p_pic2 img').attr("src",pro.bigImgPath2);
+                })
+                $('.p_ul1>li:nth-child(3)').on("mouseover",function () {
+                    $('#p_pic1 img').attr("src",pro.imgPath3);
+                    $('#p_pic2 img').attr("src",pro.bigImgPath3);
+                })
+            }
+        })
+    }else if(n=="false"){
+        var p_con = $('#p_kuang');
+        var a = 1;
+        $.ajax({
+            type: "get",
+            url: "http://10.80.11.213:8080/product",
+            data:{
+                getclass:c,
+                getcontent:r,
+//            cb:"shows1"
+            },
+            dataType: "jsonp",
+            jsonp:"cb",
+            success:function(data){
+//                success: function (data) {
+//                    var p_con = $('#p_kuang');
+////            console.log(data);
+//                    var pro = data[0];
+//                    console.log(pro)
+//                    // console.log(pro.productName)
+//                    var divs = document.createElement("div");
+                var p_con = $('#p_kuang');
+                var pro = data[0];
+                console.log(pro)
+                var div = document.createElement("div");
+
+                div.innerHTML = '<div id="p_pic1"><img src="'+pro.imgPath+'"/><div id="p_backg"></div></div><div id="p_pic2"><img id="p_ig" src="'+pro.bigImgPath+'" alt="" /></div><ul class="p_ul1"><li><a href="'+pro.bigImgPath+'"><img src="'+pro.smallImgPath1+'" alt=""></a></li><li><a href="'+pro.bigImgPath2+'"><img src="'+pro.smallImgPath2+'" alt=""></a></li><li><a href="'+pro.bigImgPath3+'"><img src="'+pro.smallImgPath3+'" alt=""></a></li></ul><div class="p_right1"><h4 class="h4">'+pro.productName+'</h4><h5 class="h5">'+pro.intro+'</h5><div class="p_con1"> <span>￥<em>'+pro.newPrice+'</em></span><span><em>6.8</em>折</span> <div>市场价:￥<del>'+pro.oldPrice+'</del></div></div><div class="p_con2"><span>D1价</span></div><div class="p_con3" id="p_con3"></div><div class="p_font1">商品编码：<span>'+pro.coding+'</span></div><div class="p_font2">服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：由<span>D1优尚网</span>发货，开具发票并提供售后服务。</div><div class="p_font3">顾客评分：<span><img class="p_star" src="http://images.d1.com.cn/images2011/commentimg/star.gif" alt=""></span><span>(已有<em>'+pro.comment+'</em>人评价)</span></div><div class="p_font4">购买数量：<span class="p_f1">-</span><span id="p_f2" class="p_f2">1</span><span class="p_f3">+</span></div> <div class="p_font5"><img id="inbuycar" src="http://images.d1.com.cn/images2014/product/frgwc.png" alt=""><img src="http://images.d1.com.cn/images2014/product/jrsc.png" alt=""></div></div>';
+
+                p_con.append(div);
+
+                $("div #inbuycar").click(function () {
+                    var buynumber=$("#p_f2").html();
+                    window.location.href="shopping/shopping2.html?info1="+pro.coding+"&info2="+buynumber;
+
+//                    setCookie("info3",pro.coding);
+                })
+
+                function timeMove(){
+                    var nowDate = new Date();
+                    var nowDateMin = nowDate.getTime();
+                    //2017.4.2
+                    var endDate = new Date("2017/7/15");
+                    var endDateMin = endDate.getTime();
+                    var tim = endDateMin - nowDateMin;
+                    //获取天数
+                    var days = Math.floor(tim/1000/60/60/24);
+                    //获取小时
+                    var hours = Math.floor(tim/1000/60/60%24);
+                    //获取分钟
+                    var mins = Math.floor(tim/1000/60%60);
+                    //获取秒数
+                    var secs = Math.floor(tim/1000%60);
+                    $("#p_con3").html('<img src="http://images.d1.com.cn/images2013/product/p_006.jpg" style="width: 21px;height: 21px" alt="">'+"剩余时间："+bl(days)+"天"+bl(hours)+":"+ bl(mins)+":"+bl(secs) );
+                }
+                timeMove();
+                var timer = setInterval(function(){
+                    timeMove();
+                }, 1000)
+                function bl(num){
+                    return num<10?"0"+num:num;
+                }
+
+                $('#p_pic1').on('mouseover',function () {
+                    $('#p_backg').show();     //show();
+                    $('#p_pic2').show();
+                    $('#p_pic1').on('mousemove',function (event) {
+                        var x= event.clientX - $('#p_pic1').offset().left-$('#p_backg').width()/2;
+                        var y= event.clientY - $('#p_pic1').offset().top-$('#p_backg').height()/2;
+                        //限制范围
+                        var maxx = $('#p_pic1').innerWidth() - $('#p_backg').outerWidth();
+                        var maxy = $('#p_pic1').innerHeight() - $('#p_backg').outerHeight();
+                        if(x<0){ x=0; }else if(x>maxx){	x=maxx; }
+                        if(y<0){ y=0; }else if(y>maxy){ y=maxy; }
+                        //算出左侧移动值占可移动值得比例
+                        var scalex = x/maxx;
+                        var scaley = y/maxy;
+                        var X1 = $('#p_ig').outerWidth()-$('#p_pic2').innerWidth();
+                        var Y1 = $('#p_ig').outerHeight()-$('#p_pic2').innerHeight();
+                        $('#p_ig').css({
+                            left:-scalex*X1,
+                            top:-scaley*Y1
+                        });
+                        $('#p_backg').css({
+                            left:x,
+                            top:y,
+                        });
+
+                    })
+                })
+                $('#p_pic1').on('mouseout',function () {
+                    $('#p_backg').hide();
+                    $('#p_pic2').hide();
+                })
+
+                var img1 = $('.p_star');
+                img1.css({
+                    'marginTop':'-203px'
+                })
+                var num =1;
+                $('.p_f1').click(function () {
+                    num--;
+                    if(num<=1){
+                        num = 1;
+                    }
+                    $('.p_f2').html(num);
+                })
+                $('.p_f3').click(function () {
+                    num++;
+                    // console.log(num);
+                    $('.p_f2').html(num);
+                })
+
+                $('.p_ul1>li:nth-child(1)').on("mouseover",function () {
+                    $('#p_pic1 img').attr("src",pro.imgPath);
+                    $('#p_pic2 img').attr("src",pro.bigImgPath);
+                })
+                $('.p_ul1>li:nth-child(2)').on("mouseover",function () {
+                    $('#p_pic1 img').attr("src",pro.imgPath2);
+                    $('#p_pic2 img').attr("src",pro.bigImgPath2);
+                })
+                $('.p_ul1>li:nth-child(3)').on("mouseover",function () {
+                    $('#p_pic1 img').attr("src",pro.imgPath3);
+                    $('#p_pic2 img').attr("src",pro.bigImgPath3);
+                })
+
+            }
+        })
+
+    }
+
+
+
+</script>
+</body>
+</html>

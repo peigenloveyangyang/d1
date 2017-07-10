@@ -1,0 +1,146 @@
+#content-warp{
+    width: 100%;
+    background-color:#f7f7f7 ;
+}
+#content{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+#content>div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#navbar-example{
+    width: 100%;
+    background-color: #ececec;
+    border: none;
+    z-index: 100000;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    opacity: 0.8;
+    /*transition: all 1s;*/
+}
+.move-to-top{
+    position: fixed;
+    top:0;
+}
+#navbar-example .nav li a{
+    display: inline-block;
+    width: 166px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+    padding: 0;
+    font-size: 14px;
+}
+#navbar-example .nav li a:hover{
+    color: #79797b;
+}
+#navbar-example .container-fluid{
+    width: 1200px;
+    margin: 0 auto;
+}
+#navbar-example .container-fluid .collapse .nav{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#navbar-example .container-fluid .collapse{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#navbar-example .nav .active a{
+    background-color: #cd0074;
+    color: white;
+}
+#content .row{
+    padding: 0;
+    margin: 0;
+}
+/*主题类*/
+.l-zhuti-cont-div{
+    margin-bottom: 25px;
+    padding: 5px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.l-zhuti-cont-div h5{
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+#l-zhuti-cont li:hover{
+    opacity: 0.8;
+}
+#l-zhuti-cont li:hover a h5{
+    color: red;
+}
+/*设计类*/
+.l-sheji-cont-div{
+    margin-bottom: 25px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+}
+.l-sheji-cont-div div{
+    overflow: hidden;
+}
+.l-price{
+    width: 100%;
+    height: 135px;
+    display: block;
+    position: absolute;
+    border-bottom: 5px solid #dedede;
+    bottom: -65px;
+    background: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.l-price-p1{
+    height: 70px;
+    line-height: 70px;
+}
+.l-price-p2{
+    height: 55px;
+    line-height: 55px;
+    color: #79797b;
+    font-size: 16px;
+}
+.l-price-p2 span{
+    height: 55px;
+    line-height: 55px;
+    color: red;
+    font-size: 20px;
+}
+.l-sheji-cont li:hover .l-price{
+    /*渐变*/
+    transition: all 0.5s;
+    bottom: 0;
+}
+.l-sheji-cont li:hover .l-price-p1{
+    color: red;
+}
+.l-shadow{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    opacity: 0.3;
+    display: none;
+}
+.l-sheji-cont li:hover .l-shadow{
+    display: block;
+}

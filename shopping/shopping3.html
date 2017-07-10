@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D1优尚网-提交订单</title>
+	<link href="http://www.jq22.com/jquery/bootstrap-3.3.4.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shopping2css">
+</head>
+<body>
+	<div class="S_head">
+		<div class="ht_login">
+            <span class="S_landing">
+                <a href="##" target="_blank">帮助中心</a></li>
+            </span>
+            <span class="S_ShowWelcome"> 您好，
+                <span>####</span>
+                欢迎来到D1购物（
+                <a href="##">退出登录</a>）
+            </span>
+        </div>
+        <div class="T_nav">
+        	<a href="##">
+        		<img src="http://images.d1.com.cn/BuyImages/logo.jpg" alt="">
+        	</a>
+        	<img src="http://images.d1.com.cn/BuyImages/cart.jpg" alt="">
+        	<img src="http://images.d1.com.cn/BuyImages/head_process_06.jpg" alt="">
+        </div>
+        </div>
+        <!-- 提交订单前需要填写的内容 -->
+        <div class="T_user">
+        	<p>请核对订单信息，并点击"提交订单"</p>
+        	<p>收货人信息</p>
+        	<ul class="T_users">
+        		<li>
+        			<span class="b2">*</span>&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:&nbsp;&nbsp;&nbsp;<input class="b1" type="text">
+        			<input type="radio" value="男" name="sex" checked="checked" style="margin-left:230px">&nbsp;&nbsp;先生&nbsp;&nbsp;
+        			<input type="radio" value="女" name="sex">&nbsp;&nbsp;女士
+        		</li>
+        		<li>
+        			<span style="float:left"><span class="b2">*</span>&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区:&nbsp;&nbsp;&nbsp;</span>
+					<form class="form-inline" style="float:left">
+				      <div id="distpicker5">
+				        <div class="form-group">
+				          <label class="sr-only" for="province10">Province</label>
+				          <select class="form-control" id="province10"></select>
+				        </div>
+				        <div class="form-group">
+				          <label class="sr-only" for="city10">City</label>
+				          <select class="form-control" id="city10"></select>
+				        </div>
+				        <div class="form-group">
+				          <label class="sr-only" for="district10">District</label>
+				          <select class="form-control" id="district10"></select>
+				        </div>
+				      </div>
+				    </form>
+        		</li>
+        		<li>
+        			<span class="b2">*</span>&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址:&nbsp;&nbsp;&nbsp;<input class="b3" type="text">
+        		</li> 
+        		<li>&nbsp;&nbsp;&nbsp;&nbsp;邮政编码:&nbsp;&nbsp;&nbsp;<input class="b1" type="text">&nbsp;&nbsp;&nbsp;&nbsp;有助于快速确定收货地址
+        		</li> 
+        		<li>
+        			<span class="b2">*</span>&nbsp;&nbsp;手机号码:&nbsp;&nbsp;&nbsp;<input class="b1" type="text">
+        		</li>
+        		<li>
+        			&nbsp;&nbsp;&nbsp;&nbsp;固定电话: &nbsp;&nbsp;<input class="b1" type="text">
+        		</li>
+        		<li>
+        		&nbsp;&nbsp;&nbsp;&nbsp;邮箱地址: &nbsp;&nbsp;<input class="b1" type="text">&nbsp;&nbsp;&nbsp;&nbsp;用来接收订单提醒邮件，便于您及时了解订单状态
+        		</li>	
+        	</ul>
+			<a href="shopping4.html"><input class="T_save" type="submit" value="保存收货人"></a>
+        	<p class="T_clear">清除重写</p>
+        </div>
+</body>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="../js/distpicker.data.js"></script>
+	<script src="../js/distpicker.js"></script>
+	<script src="../js/main.js"></script>
+    <script>
+
+    </script>	
+</html>

@@ -1,0 +1,51 @@
+
+#content-right{
+    width: 753px;
+    height:906px;
+    float: right;
+    margin-top: 12px;
+
+}
+#content-right ul{
+    overflow: hidden;
+    width: 753px;
+}
+#content-right ul li{
+    width:243px;
+    height: 130px;
+    float: left;
+    margin-right:6px ;
+    background-repeat: no-repeat;
+}
+#content-right ul li p{
+    width: 121px;
+    margin-left: 122px;
+}
+#content-right ul li p:nth-child(1){
+    margin-top:36px ;
+}
+#content-right-first{
+    background-image: url(http://images.d1.com.cn/images2012/New/help/3.jpg);
+
+}
+
+#content-right-second{
+    background-image: url(http://images.d1.com.cn/images2012/New/help/4.jpg);
+
+}
+#content-right-third{
+    background-image: url(http://images.d1.com.cn/images2012/New/help/5.jpg);
+
+}
+#content-right-fourth{
+    background-image: url(http://images.d1.com.cn/images2012/New/help/6.jpg);
+
+}
+#content-right-fifth{
+    background-image:url(http://images.d1.com.cn/images2012/New/help/7_1.jpg);
+
+}
+#content-right-sixth{
+    background-image: url(http://images.d1.com.cn/images2012/New/help/8.jpg);
+
+}

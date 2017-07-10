@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body ng-app="myApp" ng-controller="userCtrl">
+<div class="container">
+    <div class="page-header">
+        <h2>添加商品</h2>
+    </div>
+
+    <button ng-click="createFn()" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-user"></span>
+        <span>创建</span>
+    </button>
+
+    <form class="form form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-1">商品名</label>
+            <div class="col-sm-11">
+                <input ng-model="productName"  type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">图片地址1</label>
+            <div class="col-sm-11">
+                <input ng-model="imgPath" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">图片地址2</label>
+            <div class="col-sm-11">
+                <input ng-model="imgPath2" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">图片地址3</label>
+            <div class="col-sm-11">
+                <input ng-model="imgPath3" type="text" class="form-control">
+            </div>
+        </div>
+        <!--详情页图片-->
+        <div class="form-group">
+            <label class="control-label col-sm-1">大图片地址1</label>
+            <div class="col-sm-11">
+                <input ng-model="bigImgPath" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">大图片地址2</label>
+            <div class="col-sm-11">
+                <input ng-model="bigImgPath2" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">大图片地址3</label>
+            <div class="col-sm-11">
+                <input ng-model="bigImgPath3" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">小图片地址1</label>
+            <div class="col-sm-11">
+                <input ng-model="smallImgPath1" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">小图片地址2</label>
+            <div class="col-sm-11">
+                <input ng-model="smallImgPath2" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">小图片地址3</label>
+            <div class="col-sm-11">
+                <input ng-model="smallImgPath3" type="text" class="form-control">
+            </div>
+        </div>
+        <!---->
+        <div class="form-group">
+            <label class="control-label col-sm-1">评论数目comment</label>
+            <div class="col-sm-11">
+                <input ng-model="comment" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">急速发货quickness</label>
+            <div class="col-sm-11">
+                <input ng-model="quickness" type="text" class="form-control">
+            </div>
+        </div>
+        <!--化妆品、创意家居、创意数码、时尚装备-->
+        <div class="form-group">
+            <label class="control-label col-sm-1">productsort（1，2，3，4）</label>
+            <div class="col-sm-11">
+                <input ng-model="productsort" type="text" class="form-control">
+            </div>
+        </div>
+        <!--热门品牌、价格-->
+        <div class="form-group">
+            <label class="control-label col-sm-1">品牌brand</label>
+            <div class="col-sm-11">
+                <input ng-model="brand" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">适用apply（中，干，混合</label>
+            <div class="col-sm-11">
+                <input ng-model="apply" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">oldPrice</label>
+            <div class="col-sm-11">
+                <input ng-model="oldPrice" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">newPrice</label>
+            <div class="col-sm-11">
+                <input ng-model="newPrice" type="text" class="form-control">
+            </div>
+        </div>
+        <!--综合、销量、新品、限时特价、D1自营-->
+        <div class="form-group">
+            <label class="control-label col-sm-1">综合synthesize</label>
+            <div class="col-sm-11">
+                <input ng-model="synthesize" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">销量sales</label>
+            <div class="col-sm-11">
+                <input ng-model="sales" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">新品newDate</label>
+            <div class="col-sm-11">
+                <input ng-model="newDate" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">限时特价timesLimit</label>
+            <div class="col-sm-11">
+                <input ng-model="timesLimit" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">D1自营selfSupport</label>
+            <div class="col-sm-11">
+                <input ng-model="selfSupport" type="text" class="form-control">
+            </div>
+        </div>
+        <!--详情页-->
+        <div class="form-group">
+            <label class="control-label col-sm-1">简介intro</label>
+            <div class="col-sm-11">
+                <input ng-model="intro" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">商品编码coding</label>
+            <div class="col-sm-11">
+                <input ng-model="coding" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">vipPrice</label>
+            <div class="col-sm-11">
+                <input ng-model="vipPrice" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1">whiteGodPrice</label>
+            <div class="col-sm-11">
+                <input ng-model="whiteGodPrice" type="text" class="form-control">
+            </div>
+        </div>
+    </form>
+
+    <hr>
+    <button  ng-click="save()" class="btn btn-success">
+        <span class="glyphicon glyphicon-save"></span>
+        <span>保存</span>
+    </button>
+</div>
+
+
+
+
+</body>
+<script type="text/javascript" src="../angular.min.js"></script>
+<script>
+    var users=[];
+
+    var app = angular.module("myApp",[]);
+
+
+    app.controller("userCtrl",function ($scope,$http) {
+        $http.get("http://10.80.11.213:8080/youshang?act=getData").success(function (res) {
+            $scope.users=res;
+        });
+
+
+        var thisIndex=0;
+        var thisUser=null;
+
+        $scope.createBol=true;
+
+        function resetFn() {
+            $scope.productName="";
+            $scope.imgPath="";
+            $scope.imgPath2="";
+            $scope.imgPath3="";
+            $scope.bigImgPath="";
+            $scope.bigImgPath2="";
+            $scope.bigImgPath3="";
+            $scope.smallImgPath1="";
+            $scope.smallImgPath2="";
+            $scope.smallImgPath3="";
+            $scope.comment="";
+            $scope.quickness="";
+            $scope.productsort="";
+            $scope.brand="";
+            $scope.apply="";
+            $scope.oldPrice="";
+            $scope.newPrice="";
+            $scope.synthesize="";
+            $scope.sales="";
+            $scope.newDate="";
+            $scope.timesLimit="";
+            $scope.selfSupport="";
+            $scope.intro="";
+            $scope.coding="";
+            $scope.vipPrice="";
+            $scope.whiteGodPrice="";
+        }
+
+        $scope.edit=function (index) {
+            thisIndex=index;
+            $scope.createBol=false;
+            $scope.productName=$scope.users[index].productName;
+            $scope.imgPath=$scope.users[index].imgPath;
+            $scope.imgPath2=$scope.users[index].imgPath2;
+            $scope.imgPath3=$scope.users[index].imgPath3;
+            $scope.bigImgPath=$scope.users[index].bigImgPath;
+            $scope.bigImgPath2=$scope.users[index].bigImgPath2;
+            $scope.bigImgPath3=$scope.users[index].bigImgPath3;
+            $scope.smallImgPath1=$scope.users[index].smallImgPath1;
+            $scope.smallImgPath2=$scope.users[index].smallImgPath2;
+            $scope.smallImgPath3=$scope.users[index].smallImgPath3;
+            $scope.comment=$scope.users[index].comment;
+            $scope.quickness=$scope.users[index].quickness;
+            $scope.productsort=$scope.users[index].productsort;
+            $scope.brand=$scope.users[index].brand;
+            $scope.apply=$scope.users[index].apply;
+            $scope.oldPrice=$scope.users[index].oldPrice;
+            $scope.newPrice=$scope.users[index].newPrice;
+            $scope.synthesize=$scope.users[index].synthesize;
+            $scope.sales=$scope.users[index].sales;
+            $scope.newDate=$scope.users[index].newDate;
+            $scope.timesLimit=$scope.users[index].timesLimit;
+            $scope.selfSupport=$scope.users[index].selfSupport;
+            $scope.intro=$scope.users[index].intro;
+            $scope.coding=$scope.users[index].coding;
+            $scope.vipPrice=$scope.users[index].vipPrice;
+            $scope.whiteGodPrice=$scope.users[index].whiteGodPrice;
+
+            thisUser=$scope.users[index];
+        };
+
+        $scope.save=function () {
+//            alert(thisIndex);
+            if($scope.createBol){
+                //创建的保存
+                $http.get("http://10.80.11.213:8080/user",{
+                    params:{
+                        productName:$scope.productName,
+                        imgPath:$scope.imgPath,
+                        imgPath2:$scope.imgPath2,
+                        imgPath3:$scope.imgPath3,
+                        bigImgPath:$scope.bigImgPath,
+                        bigImgPath2:$scope.bigImgPath2,
+                        bigImgPath3:$scope.bigImgPath3,
+                        smallImgPath1:$scope.smallImgPath1,
+                        smallImgPath2:$scope.smallImgPath2,
+                        smallImgPath3:$scope.smallImgPath3,
+                        comment:$scope.comment,
+                        quickness:$scope.quickness,
+                        productsort:$scope.productsort,
+                        brand:$scope.brand,
+                        apply:$scope.apply,
+                        oldPrice:$scope.oldPrice,
+                        newPrice:$scope.newPrice,
+                        synthesize:$scope.synthesize,
+                        sales:$scope.sales,
+                        newDate:$scope.newDate,
+                        timesLimit:$scope.timesLimit,
+                        selfSupport:$scope.selfSupport,
+                        intro:$scope.intro,
+                        coding:$scope.coding,
+                        vipPrice:$scope.vipPrice,
+                        whiteGodPrice:$scope.whiteGodPrice,
+                    }
+                }).success(function (res) {
+//                    console.log("成功")
+                    alert("帅哥，你又插入了一条数据")
+                });
+
+
+            }
+        };
+
+        $scope.createFn=function () {
+            $scope.createBol=true;
+            resetFn();
+        };
+
+
+    })
+</script>
+</html>

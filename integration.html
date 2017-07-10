@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--css引入-->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/help-main.css">
+    <link rel="stylesheet" href="css/aa.css">
+
+</head>
+<script type="text/javascript">
+
+    function op(obj){
+        if (window.confirm("确定要兑换此商品吗?一经兑换,不能恢复.")){
+            addCart(obj);
+        }
+    }
+    function addCart(obj){
+        var gdsid=$(obj).attr("attr");
+        var flags='';
+        if($(obj).attr("flags")!=null&&$(obj).attr("flags").length>0)
+        {
+            flags=$(obj).attr("flags");
+        }
+        if(gdsid.indexOf(",")>0){
+            var mid=$.trim($("#hmid").val());
+            if(mid.length==0){
+                Login_Dialog();
+            }else{
+                $.close();
+                var s="";if((typeof c)!="undefined"){s="?c="+encodeURIComponent(c);}else{s=""+document.location;s=s.replace("http://","");s=s.substring(s.indexOf("/"));s="?c="+encodeURIComponent(s);}$.load("选择商品颜色和尺码",450,"/jifen/choosesku.jsp?flags="+flags);
+            }
+        }
+        else{
+            $.inCart(obj,{ajaxUrl:'/ajax/flow/listAwardInCart_pc.jsp'});
+        }
+    }
+
+</script>
+<style>
+    a img{border:none;}
+    .newlist1 {margin:0px;padding:0px; list-style:none; background:#fff7d2;overflow: hidden;}
+    .newlist1 li{ float:left; width:230px;height:353px; overflow:hidden; margin-left:5px; position:relative; margin-bottom:10px; background:#ffd200; text-align:center;}
+</style>
+<body>
+<!--头部开始-->
+<div id="head">
+    <div id="head-wrap">
+        <!--h-top-->
+        <div id="h-top">
+            <div id="h-top-in">
+                <div id="h-top-l">
+                    <p>你号，欢迎来到D1购物，请<a style="color:#8cc341;padding: 0 5px" href="#">登录</a>或<a style="color:#8cc341;padding: 0 5px" href="#">注册</a></p>
+                </div>
+                <div id="h-top-r">
+                    <ul>
+                        <li class="myAccountBtn">
+                            <a href="#">我的账户</a>
+                            <div id="myAccount">
+                                <ul>
+                                    <li>
+                                        <a href="#">我的订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的优惠劵</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的积分</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的晒单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的评论</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">订单查询</a></li>
+                        <li><a href="integration.html">积分换购</a></li>
+                        <li><a href="help.html">帮助中心</a></li>
+                        <li style="float: right"><a href="#">在线客服</a></li>
+                        <li class="telD1Btn" style="float: right">
+                            <a href="#">手机优尚</a>
+                            <div id="telD1">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangchuangyishenghuo.jpg" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚创意生活</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>创意生活&nbsp;尽在掌握</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="img/head/youshangmeizhuang.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>关注优尚美妆</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>每周一次美妆特卖</p>
+                                        </div>
+                                    </li>
+                                    <li style="border-bottom: none">
+                                        <div>
+                                            <img src="img/head/app-tongyangerweima.png" alt="">
+                                        </div>
+                                        <div class="telD1-r">
+                                            <span>下载APP</span>
+                                            <p>微信扫一扫关注</p>
+                                            <p>一元领取APP礼物</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--h-mid-->
+        <div id="h-mid">
+            <div class="h-mid-wrap">
+                <div>
+                    <img src="img/head/logo.png" alt="">
+                </div>
+                <div class="search">
+                    <div>
+                        <form class="bs-example bs-example-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="请输入您要搜索的商品名称或编码" class="form-control searchInput">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default searchBtn" type="button">搜索</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hotSearch">
+                        <span>热门搜索：</span>
+                        <ul>
+                            <li><a href="#">冰爽夏日</a></li>
+                            <li><a href="#">灭蚊</a></li>
+                            <li><a href="#">清仓</a></li>
+                            <li><a href="#">雨季</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhengping">
+                    <img src="img/head/zhengpin.jpg" alt="">
+                </div>
+                <div id="buyCar">
+                    <div>
+                        <img style="height: 33px" src="img/head/gouwu.png" alt="">
+                    </div>
+                    <div>
+                        <p>购物车 <span>0</span> 件</p>
+                    </div>
+                    <div class="xiala"></div>
+                    <div id="card">
+                        <p>您的购物车中暂无商品!</p>
+                        <div id="jiesuan">
+                            <div>
+                                <p>购物车中有<span>0</span>&nbsp;金额总计:<span>￥00.00</span>件商品</p>
+                            </div>
+                            <div id="jiesuanBtn">
+                                <a href="#">立即结算&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--h-bot-->
+        <div id="h-bot">
+            <div class="h-bot-in">
+                <ul>
+                    <li id="allgoods">
+                        <a href="#">全部商品</a>
+                        <div id="allgoodsBtn"></div>
+                        <div id="goodsInfo">
+                            <div class="goodsInfo-l">
+                                <ul>
+                                    <li>
+                                        <h3>护肤水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>彩妆香水</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>个性配饰</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>创意家居</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>数码宝贝</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>时尚热点</h3>
+                                        <div class="goodsInfo-one">
+                                            <a href="#">洁面</a>
+                                            <a href="#">爽肤水</a>
+                                            <a href="#">精华</a>
+                                            <a href="#">乳液/面霜</a>
+                                            <a href="#">眼霜</a>
+                                            <a href="#">防晒隔离</a>
+                                            <a href="#">唇部护理</a>
+                                            <a href="#">面膜/面贴</a>
+                                            <a href="#">黑头角质</a>
+                                            <a href="#">护肤套装</a>
+                                            <a href="#">卸妆</a>
+                                            <a href="#">身体乳</a>
+                                            <a href="#">美体塑造</a>
+                                            <a href="#">脱毛</a>
+                                            <a href="#">护手霜</a>
+                                            <a href="#">男士护肤</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="goodsInfo-r">
+                                <div class="goodsInfo-r-div">
+                                    <h3>热卖品牌</h3>
+                                    <div class="goodsInfo-one">
+                                        <a href="#">洁面</a>
+                                        <a href="#">爽肤水</a>
+                                        <a href="#">精华</a>
+                                        <a href="#">乳液/面霜</a>
+                                        <a href="#">眼霜</a>
+                                        <a href="#">防晒隔离</a>
+                                        <a href="#">唇部护理</a>
+                                        <a href="#">面膜/面贴</a>
+                                        <a href="#">黑头角质</a>
+                                        <a href="#">护肤套装</a>
+                                        <a href="#">卸妆</a>
+                                        <a href="#">身体乳</a>
+                                        <a href="#">美体塑造</a>
+                                        <a href="#">脱毛</a>
+                                        <a href="#">护手霜</a>
+                                        <a href="#">男士护肤</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">化妆品</a></li>
+                    <li><a href="#">创意家居</a></li>
+                    <li><a href="#">创意数码</a></li>
+                    <li><a href="#">时尚装备</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+
+<!--内容开始-->
+<table id="__01" width="980"   border="0" cellpadding="0" cellspacing="0" style="margin:0px auto;">
+    <tr>
+        <td colspan="2">
+            <img src="http://images.d1.com.cn/zt2013/jifen0826/jfhhl980_01.jpg" width="980" height="161" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="http://images.d1.com.cn/zt2013/jifen0826/jfhhl980_02.jpg" width="980" height="264" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td width="762" height="57" bgcolor="#FFD200">
+            <input type="hidden"  id="hmid" value=""/>
+            欢迎您进入积分兑换页面，请<a href="http://www.d1.com.cn/login.jsp" style="color:#f00;">登录</a>查看积分！
+        </td>
+        <td width="218" bgcolor="#FFD200">
+            <a href="/html/zt2012/20121203jfhds/memo.jsp" target="_blank">
+                <img src="http://images.d1.com.cn/zt2013/jifen0826/jfhhl980_03_2.jpg" width="184" height="44" alt="" border="0">
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <img src="http://images.d1.com.cn/zt2013/jifen0826/jfhhl980_04.jpg" width="980" height="60" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td height="27" colspan="2" align="right" bgcolor="#FFF7D2">
+            <span style="color:#f00;font-size:14px;">注：现金券有效期为一个月&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="2">
+
+            <table width="100%" height="0%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="50%" height="100%">
+                        <a href="#" attr="67" onclick="op(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/jifendiyong2002017410.jpg" width="491" height="196" alt="">
+                        </a>
+                    </td>
+                    <td width="50%">
+                        <a href="#" attr="36" onclick="op(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/jifendiyong5002017410.jpg" width="489" height="196" alt="">
+                        </a>
+                    </td>
+                </tr>
+            </table></td>
+    </tr>
+    <tr><td colspan="2"><a name="a1"></a></td></tr>
+
+    <tr>
+        <td colspan="2">
+            <img src="http://images.d1.com.cn/zt2013/jifen0826/jfhhl980_07.jpg" width="980" height="64" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background:#FFF7D2">
+            <ul class="newlist1">
+                <li>
+                    <a href="http://www.d1.com.cn/product/01206762" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/05/05/0120676220160505180944_1_200.jpg" width="230" height="230"/>
+                    </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1872" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />
+                        </a>
+                    </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   10积分+9.9元		   	    		                   </span>
+                        夏日必备的万能西瓜哈密瓜水果分割器（颜色随机   可简		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01425799" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/03/03/01425799_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1864" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   100积分+29.0元		   	    		                   </span>
+                        【AleeiShe 小栗舍】小栗舍蜗牛精华天蚕丝水润面膜10片装		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01206623" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/03/08/0120662320160803114742_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1847" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   50积分+1.0元		   	    		                   </span>
+                        iphone6/6s/6plus三合一卡通手机套（手机壳、支架、可拆		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/08000449" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/10/15/0800044920161102173143_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1843" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   200积分+3.0元		   	    		                   </span>
+                        懒人福音！创意床头懒人手机支架		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/04001529" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/06/28/0400152920160630114025_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1853" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   30积分+5.0元		   	    		                   </span>
+                        【Sheromo诗若漫】时尚防晒草帽（材质柔软，不伤皮肤，可折		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01426730" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/09/01/01426730_1_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1857" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   10积分+8.0元		   	    		                   </span>
+                        美甲七件套（平口/斜口指甲剪、眉毛剪、双头挑、指甲锉、		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01206624" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/03/08/0120662420160803115550_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1838" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   50积分+9.9元		   	    		                   </span>
+                        iphone6/6s/6plus苹果手机TPU渐变菱格镶钻手机套保护软壳		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/04001491" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/07/03/0400149120160427182551_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1834" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   50积分+9.9元		   	    		                   </span>
+                        防紫外线潮人复古炫彩明星同款墨镜 男女通用款		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01206530" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/12/28/0120653020170215131853_1_200.jpg" width="230" height="230"/>		   	    		               </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1855" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />		   	    		                  </a>		   	    		               </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   100积分+9.9元		   	    		                   </span>
+                        勃兰匠记八功能带LED手电筒万用工具刀		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01206572" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/01/21/0120657220160824154745_1_200.jpg" width="230" height="230"/>
+                    </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1835" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />
+                        </a>
+                    </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   10积分+9.9元		   	    		                   </span>
+                        2017限量版中国风印花不锈钢餐具（3件礼盒装）		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01520883" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/02/25/0152088320160226105435_1_200.jpg" width="230" height="230"/>
+                    </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1836" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />
+                        </a>
+                    </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   200积分+9.9元		   	    		                   </span>
+                        【YOUSOO】满天星系列s925纯银耳钉（国标S925银，精选捷克		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01206272" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2015/10/20/0120627220170223173912_1_200.jpg" width="230" height="230"/>
+                    </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1839" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />
+                        </a>
+                    </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   100积分+9.9元		   	    		                   </span>
+                        集8般武艺于一身！8合1实用多功能厨房用品8件套		   	    		               </p>
+                </li>
+
+                <li>
+                    <a href="http://www.d1.com.cn/product/01206623" target="_blank">
+                        <img src="http://images1.d1.com.cn/shopimg/gdsimg/2016/03/08/0120662320160803114742_1_200.jpg" width="230" height="230"/>
+                    </a>
+                    <p style="position:absolute; +position:relative;margin-top:-22px;">
+                        <a href="#" attr="1841" onclick="addCart(this);">
+                            <img src="http://images.d1.com.cn/zt2013/jifen0826/dh2.png" />
+                        </a>
+                    </p>
+                    <p style=" margin-top:22px;+margin-top:0px; width:230px;font-size:14px; color:#000000">
+		   	    		                   <span style="font-family:'方正大黑简体';display:block; font-size:26px; text-align:center; color:#e53b2e; height:50px; +height:40px; line-height:60px;+line-height:40px; font-weight:800">
+		   	    		                   200积分+9.9元		   	    		                   </span>
+                        iphone6/6s/6plus三合一卡通手机套（手机壳、支架、可拆		   	    		               </p>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+</table>
+<!--内容结束-->
+
+<!--底部开始-->
+<div id="foot">
+    <div id="foot-wrap">
+        <div id="foot-t">
+            <img src="img/foot/biaoyu.png" alt="">
+        </div>
+        <div id="foot-m">
+            <ul>
+                <li>
+                    <span>购物帮助</span>
+                    <a href="help-newhand2.html">购物的基本问题</a>
+                    <a href="help-newhand4.html">如何使用优惠劵</a>
+                    <a href="help-newhand3.html">如何累计并消费积分</a>
+                    <a href="help-newhand1.html">第一次购物体验</a>
+                </li>
+                <li>
+                    <span>支付方式</span>
+                    <a href="help-pay1.html">货到付款</a>
+                    <a href="help-pay2.html">银行电汇</a>
+                    <a href="help-pay3.html">网银支付</a>
+                    <a href="help-pay4.html">邮局汇款</a>
+                </li>
+                <li>
+                    <span>配送方式级费用</span>
+                    <a style="color: red" href="help-self-service2.html">物流信息查询</a>
+                    <a href="help-dispatching1.html">配送范围</a>
+                    <a href="help-dispatching2.html">配送方式</a>
+                    <a href="help-dispatching3.html">运费说明</a>
+                </li>
+                <li>
+                    <span>售后服务</span>
+                    <a href="help-customer-service.html">D1品质保证原则</a>
+                    <a href="help-customer-service.html">D1退换货总原则</a>
+                    <a href="help-customer-service.html">D1退换货地址及流程</a>
+                    <a href="help-customer-service.html">D1退换货特殊说明</a>
+                </li>
+                <li>
+                    <span>VIP特享政策</span>
+                    <a href="help-vip2.html">VIP会员的优惠及服务</a>
+                    <a href="help-vip2.html">如何获得和保持VIP</a>
+                    <a href="help-vip3.html">如何升级为白金VIP</a>
+                    <a href="help-vip3.html">白金VIP的优惠及服务</a>
+                </li>
+            </ul>
+            <img class="foot-m-r" src="img/foot/erweima.png" alt="">
+        </div>
+        <div id="foot-b">
+            <div class="foot-b-t">
+                <a href="help-self-service3.html">联系我们</a>
+                <a href="help-investment2.html">关于我们</a>
+                <a href="help-dispatching1.html">配送范围</a>
+                <a href="help-pay.html">如何付款</a>
+                <a href="help-investment1.html">品牌合作</a>
+                <a href="help-friend.html">友情链接</a>
+                <a style="border: none" href="http://www.kubolo.com/">全球创意购</a>
+            </div>
+        </div>
+        <div id="foot-mid">
+            <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202003031700010" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/wei_349.gif" width="45" height="50" border="0"></a>
+            <a id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20130321002326002808" target="_blank"><img src="http://images.d1.com.cn/images2013/index/cx.png?l=CX20130321002326002808"></a>
+            <a href="http://images.d1.com.cn/images2010/2010ec100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/ceca.gif" width="117" height="42" border="0"></a>
+            <a href="http://images.d1.com.cn/images2010/dzxh91602_mwang.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/images2010/beca.gif" width="79" height="42"></a>
+            <a href="http://images.d1.com.cn/images2012/foot/2007_top100.jpg" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/top100_logo.gif" border="0"></a>
+            <a href="http://www.ectrustprc.org.cn/seal/splash/1000016.htm" target="_blank" rel="nofollow"><img src="http://images.d1.com.cn/homeimg07/redlogo.gif" border="0"></a>
+        </div>
+        <div id="foot-bot">
+            京ICP证030072号&nbsp;&nbsp;京公网安备：110108905029 &nbsp;&nbsp;www.D1.com.cn Copyright 2002-2016 D1优尚网 版权所有
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+<!--js引入-->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/xx.js"></script>
+<script src="js/cc.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+#lunbotu{
+    width: 100%;
+    max-width: 2100px;
+    overflow: hidden;
+}
+#l-box{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+}
+#l-box ol{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    margin-left: -60px;
+    z-index: 100;
+}
+#l-box ol li{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height:20px;
+    color: white;
+}
+#l-box ul{
+    overflow: hidden;
+}
+#l-box ul li{
+    float: left;
+}
+
+#l-content{
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+#lunbotu .l-actBtn{
+    background-color: red;
+}
+#l-banner{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#l-banner li img{
+    margin: auto;
+}
+#l-box a{
+    display: none;
+    opacity: 0.5;
+    margin-top: -35px;
+    z-index: 100;
+    position: absolute;
+}
+#l-box:hover a{
+    display: block;
+}
+#l-leftBtn{
+    left: 50%;
+    margin-left: -450px;
+    top: 50%;
+}
+#l-rightBtn{
+    right: 50%;
+    margin-right: -450px;
+    top: 50%;
+}

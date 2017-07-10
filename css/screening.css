@@ -1,0 +1,214 @@
+#content {
+    width: 960px;
+    margin: auto;
+}
+
+/*导航*/
+.navigate {
+    height: 30px;
+    border: 1px solid #aba8a7;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navigation {
+    height: 100%;
+    padding-left: 10px;
+}
+.navigation li {
+    position: relative;
+    float: left;
+    width: 60px;
+    line-height: 30px;
+}
+.navigation li span {
+    position: absolute;
+    top: -1px;
+    right: 15px;
+}
+
+/*分类*/
+.screening {
+    margin-top: 10px;
+    border-top: 1px solid #aba8a7;
+    border-left: 1px solid #aba8a7;
+    border-right: 1px solid #aba8a7;
+    overflow: hidden;
+}
+
+.screening_ul {
+    position: relative;
+}
+.screening_li {
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+.screening_left {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80px;
+    border-right: 1px solid #ddd;
+    line-height: 30px;
+    text-align: center;
+    color: #9c9c9c;
+}
+.screening_right {
+    line-height: 30px;
+}
+.screening_right li {
+    float: left;
+    margin-left: 10px;
+}
+
+/*商品*/
+.goods {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.goods_order {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    border: 1px solid #9c9c9c;
+    border-top-width: 2px;
+}
+.goods_order div {
+    float: left;
+}
+.zonghe, .xiaoliang, .xinpin, .jiage {
+    width: 70px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #9c9c9c;
+}
+.xiaoliang, .xinpin {
+    cursor: pointer;
+    background: url("../img/downarrow-grey.gif") no-repeat 49px 17px;
+}
+.xiaoliang:hover{
+    background: url("../img/downarrow-red.gif") no-repeat 49px 17px;
+}
+.xinpin:hover{
+    background: url("../img/downarrow-red.gif") no-repeat 49px 17px;
+}
+.jiage {
+    cursor: pointer;
+    background: url("../img/prizearrow-du.gif") no-repeat 49px 16px;
+}
+.goods_order p {
+    float: right;
+    margin-left: 12px;
+    line-height: 40px;
+}
+.goods_order input {
+    position: relative;
+    top: 11px;
+    left: 5px;
+}
+.goods_order .fanye {
+    position: absolute;
+    top: 11px;
+    right: 5px;
+}
+.goods_order .fanye span {
+    margin-right: 10px;
+}
+.goods_list {
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+}
+.goods_list ul {
+    position: relative;
+    overflow: hidden;
+}
+.goods_list li {
+    position: relative;
+    float: left;
+    padding: 0 10px 5px;
+    width: 232px;
+    height: 382px;
+    border: 1px solid #fff;
+}
+.goods_list li:hover {
+    border: 1px solid red;
+}
+.goods_img {
+    position: relative;
+    padding: 5px;
+    width: 200px;
+}
+/*.piclist .goods_img img {*/
+    /*width: 200px;*/
+/*}*/
+.goods_p1 {
+    position: relative;
+}
+.goods_p1>span:nth-child(1) {
+    color: red;
+}
+.goods_p1>span:nth-child(2) {
+    margin-right: 5px;
+    color: red;
+    font-size: 24px;
+}
+.goods_p1>span:nth-child(4) {
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+.goods_fahuo {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+.goods_p2 {
+    height: 36px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.goods_p3 {
+    background: url('../img/criticsicon.gif') no-repeat 0 3px;
+    text-indent: 20px;
+    margin-top: 5px;
+}
+.goods_num {
+    position: relative;
+    margin-top: 15px;
+}
+.goods_num input {
+    width: 30px;
+    height: 24px;
+    outline: none;
+    text-align: center;
+}
+.goods_num_top {
+    position: absolute;
+    left: 45px;
+    top: 0;
+}
+.goods_num_bottom {
+    position: absolute;
+    left: 45px;
+    top: 14px;
+}
+.goods_num_img {
+    position: absolute;
+    left: 80px;
+}
+.pinpai {
+    margin-top: 5px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    background-color: #dadbe0;
+}
+#tabNamebig{
+    width: 300px;
+}
+

@@ -1,0 +1,32 @@
+*{padding:0;	 margin:0;	font-family: "微软雅黑",arial;  }
+/*h1,h2,h3,h4,h5,h6{font-size:100%}*/
+li,ul,ol{  list-style: none;}
+a{	text-decoration:none;}
+img{
+    /*width: 100%; !*三像素BUG*!*/
+    vertical-align: top;
+}
+address,cite,dfn,em,var{font-style:normal;	}
+sup{	vertical-align:text-top;	}
+sub{	vertical-align:text-bottom;	}
+button,input,select,textarea{	font-size:100%;	}
+table{ border-collapse:collapse;border-spacing:0; }
+
+html,body{position: relative;width: 100%;height: 100%;}
+.l_bod{width: 100%;height: 100%;}
+.l_mid{position: relative;width: 980px;margin: 0 auto;border: 1px dashed #ccc;}
+.l_mid>h1>a{width: 276px;height: 83px;  display: inline-block;float: left;background-image: url(http://images.d1.com.cn/Index/images/spring.png);background-repeat: no-repeat;  background-position: -0px -15px;}
+.l_login1{width: 300px;line-height: 34px;font-size: 12px;color: #000;margin-left: 90px;}
+.l_login2{line-height:34px;font-size: 12px;color: #000;float: right;}
+.l_login2>a{margin: 0 5px;color: #4b4b4b;font-size: 12px;}
+.l_login3{margin: 100px auto;width: 100%;z-index: 10;overflow: hidden;border: 1px solid #ccc;}
+.l_login3>img{margin-top: 23px;}
+.l_floatLogin{position: absolute;background: url(http://images.d1.com.cn/images2012/New/reg/login_fd.png);width: 402px;overflow: hidden;height: 388px;top: 0;  right: 0; padding-top: 70px; z-index: 100;}
+.l_div{position: absolute;width: 402px;overflow: hidden;height: 388px;top: 0;right: 0; padding-top: 70px;z-index: 101;}
+.l_div_1{font-size: 12px;color: #333;width:370px;height: 148px;padding-left: 32px;line-height: 22px;}
+.l_div_1>input{vertical-align: middle;width: 182px;height: 20px;line-height: 20px;background-color: #f4f4f4;border: solid 1px #acacac; margin-bottom: 10px;}
+.l_div_1>input:nth-child(1){margin:10px 0 12px 0;outline: none;}
+#l_container{display: inline-block;position: absolute;top: 144px;}
+.l_div_1>button:nth-of-type(1){outline: none;border: none;margin: 20px 0 0 60px;cursor: pointer;}
+.l_div_1>button:nth-of-type(2){outline: none;border: none;position: absolute;bottom: 30px;left: 141px;cursor:pointer;}
+.lhdiv{color: #0149ab;width: 337px;height: 108px;background-color: #ccc;}
